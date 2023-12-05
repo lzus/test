@@ -1,9 +1,108 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T09:37:18.745Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.5" etag="bC852XYCQxf5eT7ukYwL" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-05T06:54:15.228Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="_7YoYko5ycWvtWPeYkh7" version="22.1.5" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-1" value="Launcher类" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-2" value="remoting" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-3" value="main Thread" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-4" value="agent" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-5" value="master" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="180" as="sourcePoint" />
+            <mxPoint x="740" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;parseJnlpArguments&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="90" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-8" value="访问http://127.0.0.1:8080/computer/node1/jenkins-agent.jnlp 获取remoting启动参数" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="140" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-9" value="Main类&lt;br&gt;createEngine&lt;br&gt;startEngine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-10" value="main Thread" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="275" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-11" value="Engine类" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-12" value="Thread0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-13" value="创建线程池pool,&lt;br&gt;做一些workdir的创建初始化工作" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="290" width="236" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-14" value="1.创建IOHub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="370" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-15" value="2.创建SSLContext" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-17" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="530" y="370" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-23" value="IOHub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="350" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-24" value="pool-thread0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="340" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-25" value="pool-thread1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="385" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-26" value="IOHub #&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;IOHubSelectorWatcher&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="382.5" width="200" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-27" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="690" as="sourcePoint" />
+            <mxPoint x="1040" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="610" as="sourcePoint" />
+            <mxPoint x="1030" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-29" value="访问：http://127.0.0.1:8080/tcpSlaveAgentListener/， 获取jenkins的socket端口和公钥，连接协议（JNLP4-connect, ping）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="570" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-30" value="获取endpoint(jenkins主节点)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="560" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="680" as="sourcePoint" />
+            <mxPoint x="1030" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-32" value="根据endpoint信息用SocketChannel打开到master的socket连接" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="645" width="350" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-33" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;5.connectTcp&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="645" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-34" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;4.JnlpEndpointResolver.resolver&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="294" y="540" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qVIc31OxtEuiZdBQp6vo-35" value="3.创建JnlpProtocolHandler预备用于交互数据的处理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="490" width="280" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
