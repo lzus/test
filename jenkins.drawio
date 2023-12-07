@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-07T03:30:55.623Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="lemO5klBE9r2kaREDBUy" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-07T08:36:13.122Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="hBD-ilSV0yGIcNewTiXI" version="22.1.5" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="1781" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -136,7 +136,7 @@
           <mxGeometry x="320" y="810" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S4PnsvHIbKOA204sQYgr-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" vertex="1" parent="1">
-          <mxGeometry x="100" y="580" width="43.13" height="417.5" as="geometry" />
+          <mxGeometry x="-56.25" y="423.75" width="43.13" height="730" as="geometry" />
         </mxCell>
         <mxCell id="S4PnsvHIbKOA204sQYgr-9" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ProtocolStack&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="63" y="720" width="117" height="50" as="geometry" />
@@ -202,13 +202,13 @@
           <mxGeometry x="410" y="950" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S4PnsvHIbKOA204sQYgr-36" value="out" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="400" y="980" width="60" height="30" as="geometry" />
+          <mxGeometry x="407" y="980" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S4PnsvHIbKOA204sQYgr-37" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;SocketChannel&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="467" y="950" width="126" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S4PnsvHIbKOA204sQYgr-38" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;SocketChannel&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="477" y="980" width="126" height="30" as="geometry" />
+          <mxGeometry x="470" y="980" width="126" height="30" as="geometry" />
         </mxCell>
         <mxCell id="S4PnsvHIbKOA204sQYgr-44" value="&lt;pre style=&quot;border-color: var(--border-color); font-weight: 400; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Ptr recvHead&lt;/pre&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="294" y="1060" width="210" height="80" as="geometry" />
