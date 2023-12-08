@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-08T09:48:48.999Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="1kgIll90nLjoY6xNLBUN" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-08T10:02:57.736Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="HrIt1OHVz3vP5vwQYkLW" version="22.1.7" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="1781" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -62,7 +62,7 @@
           <mxGeometry x="760" y="340" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qVIc31OxtEuiZdBQp6vo-25" value="pool-thread1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="760" y="385" width="120" height="30" as="geometry" />
+          <mxGeometry x="760" y="393.75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qVIc31OxtEuiZdBQp6vo-26" value="IOHub #&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;IOHubSelectorWatcher&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="382.5" width="200" height="37.5" as="geometry" />
@@ -298,7 +298,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LlYnxhrn1TKEqOn0lMnf-1" value="轮询selector, 如果有事件，取出IOHubReadyListener线程对象，&lt;span style=&quot;background-color: initial;&quot;&gt;用线程池pool去运行&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="880" y="340" width="100" height="30" as="geometry" />
+          <mxGeometry x="870" y="345" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LlYnxhrn1TKEqOn0lMnf-2" value="只是起到selector wakeup的作用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="410" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
