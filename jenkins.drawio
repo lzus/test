@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-10T02:48:04.614Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="beCmwzJJUwAqBBMnkCyr" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-10T05:29:08.952Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="lINHw2Pf4c5Uj-_qWvCS" version="22.1.7" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="1781" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -308,6 +308,51 @@
         </mxCell>
         <mxCell id="FhYZfcETigPhw3zmsrr1-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ConnectionHeadersFilterLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-490" y="850" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;NetworkLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-125" y="1330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="1370" as="sourcePoint" />
+            <mxPoint x="130" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-5" value="start" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1330" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getIoHub().execute(reader)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1345" width="210" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-7" value="新线程读数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1330" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="384" y="1367" as="sourcePoint" />
+            <mxPoint x="444" y="1367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-9" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;等待启动完成ProtocolStack.&lt;span style=&quot;color:#00627a;font-style:italic;&quot;&gt;waitForStart&lt;/span&gt;()&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1353" width="270" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;.AppleSystemUIFont&#39;;font-size:9.8pt;&quot;&gt;AgentProtocolClientFilterLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="1400" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="1440" as="sourcePoint" />
+            <mxPoint x="120" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-12" value="start" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getIoHub().execute(writer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1415" width="210" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="FhYZfcETigPhw3zmsrr1-14" value="调用NetworkLayer的send功能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1423" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
