@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-12T06:29:19.756Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="4DLDOXPEXm7hPa9zzocX" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T14:17:20.948Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="lvy1C8kmzInWiF1v6qbE" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="1781" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -401,6 +401,30 @@
         </mxCell>
         <mxCell id="tP1lmiw2_yDiyHUFnw0z-14" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ProtocolStack.init()结束时才调用&lt;/span&gt;awaitStart.countDown(), 此后NetworkLayer才从通道读取返回的数据进行处理&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="2308" width="460" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ConnectionHeadersFilterLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="2610" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-2" value="发送数据时，数据的转换过程：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="2530" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-3" value="doSend(ByteBuffer data)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="2760" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-5" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-590.5" y="2680" as="sourcePoint" />
+            <mxPoint x="-590" y="2730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-7" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-590" y="2800" as="sourcePoint" />
+            <mxPoint x="-589.5" y="2850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-8" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sendQueue.put(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="2850" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
