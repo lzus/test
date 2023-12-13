@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T14:41:15.348Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="26jYkxyN8uiDd9eqcA51" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T14:52:43.129Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="PnL8f2PQzSNDKKNQwkXJ" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -427,7 +427,20 @@
           <mxGeometry x="-640" y="2850" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="62yxdlusjtpypa1GuYyr-9" value="sendQueue是一个ByteBuffer[]数组数据类型，每个数组元素ByteBuffer大小是8192，sendQueue会保存往里存的data数据（设计成存储是连续的，无边界，所以如果往里写的data数据比较大的话，sendQueue会动态申请更多ByteBuffer数组元素去保存，所以data的存储是会跨数组元素存储的）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1040" y="2850" width="340" height="50" as="geometry" />
+          <mxGeometry x="-1020" y="2850" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-10" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-590" y="2900" as="sourcePoint" />
+            <mxPoint x="-589.5" y="2950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-589.5" y="2925" />
+              <mxPoint x="-589.5" y="2925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-11" value="然后循环发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;申请一个8192的ByteBuffer tmp&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;while (sendQueue.hasRemaining()) {&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sendQueue.get(tmp); //填满tmp 8192&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ptr.doSend(&lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;); //发送&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-730" y="2990" width="300" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
