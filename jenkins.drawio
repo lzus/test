@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T15:49:36.138Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jpOKWcn6eZ5wp5dOnMc-" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T15:49:50.545Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Y-H7VtFf85-jr9NK-3h3" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -473,7 +473,7 @@
         <mxCell id="62yxdlusjtpypa1GuYyr-20" value="注意，这里有分叉，当sendQueue原先没数据时，&lt;br&gt;直接调用&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ptr.doSend(data)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-464.37" y="2870" width="315" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="62yxdlusjtpypa1GuYyr-21" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(tmp)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="62yxdlusjtpypa1GuYyr-21" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-470" y="2970" width="280" height="40" as="geometry" />
         </mxCell>
         <mxCell id="62yxdlusjtpypa1GuYyr-22" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
