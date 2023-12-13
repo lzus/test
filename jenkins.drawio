@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T15:01:34.913Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="UQEekdgoREOPnUqAbrpZ" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T15:49:36.138Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jpOKWcn6eZ5wp5dOnMc-" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -432,7 +432,7 @@
         <mxCell id="62yxdlusjtpypa1GuYyr-10" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-590" y="2900" as="sourcePoint" />
-            <mxPoint x="-589.5" y="2950" as="targetPoint" />
+            <mxPoint x="-589" y="3050" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-589.5" y="2925" />
               <mxPoint x="-589.5" y="2925" />
@@ -440,10 +440,51 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="62yxdlusjtpypa1GuYyr-11" value="然后循环发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBuffer tmp = ByteBuffer.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;8192&lt;/span&gt;)；  //申请一个8192的ByteBuffer tmp&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;while (sendQueue.hasRemaining()) {&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  ((Buffer) &lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;).clear();&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  sendQueue.get(tmp); //填满tmp 8192字节，或者不满8192但是sendQueue已经读取完毕&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  ptr.doSend(&lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;); //发送&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-690" y="2970" width="610" height="220" as="geometry" />
+          <mxGeometry x="-690" y="3060" width="610" height="220" as="geometry" />
         </mxCell>
         <mxCell id="62yxdlusjtpypa1GuYyr-12" value="doSend()是上层应用层调用，我们无法预知data的大小，所以借助sendQueue这一动态空间先保存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-890" y="2760" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-14" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(tmp)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-700" y="3300" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-15" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-575.5" y="3240" as="sourcePoint" />
+            <mxPoint x="-575" y="3290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-575" y="3265" />
+              <mxPoint x="-575" y="3265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;border-color: var(--border-color); font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;SSLEngineFilterLayer&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="2600" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-17" value="doSend(ByteBuffer tmp)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="234" y="2710" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-19" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-570" y="2800" as="sourcePoint" />
+            <mxPoint x="-390" y="2890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-20" value="注意，这里有分叉，当sendQueue原先没数据时，&lt;br&gt;直接调用&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ptr.doSend(data)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-464.37" y="2870" width="315" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-21" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(tmp)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="2970" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62yxdlusjtpypa1GuYyr-22" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-390" y="2930" as="sourcePoint" />
+            <mxPoint x="-389.5" y="2980" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-389.5" y="2940" />
+              <mxPoint x="-389.5" y="2940" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
