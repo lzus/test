@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T16:01:26.761Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Y7Z_y2ZXyErEqktagbWG" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T16:04:55.583Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="JJtlcd5KEnv75toiCfvR" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -486,8 +486,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="62yxdlusjtpypa1GuYyr-24" value="这个ByteBuffer tmp的大小也是未知的，因为tmp的值可能是上一层直接发送的data或self_data， 而不是通过ByfeBufferQueue获取的8192字节的tmp" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="414" y="2700" width="286" height="60" as="geometry" />
+        <mxCell id="62yxdlusjtpypa1GuYyr-24" value="这个ByteBuffer message的大小也是未知的，因为tmp的值可能是上一层直接发送的data或上一层self_data， 也有可能是通过ByfeBufferQueue获取的8192字节的tmp; 也有可能是自身的self_data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2700" width="406" height="60" as="geometry" />
         </mxCell>
         <mxCell id="62yxdlusjtpypa1GuYyr-25" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
