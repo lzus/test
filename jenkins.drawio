@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T05:30:00.663Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="CKS5M-MyU-WDeMG7InYd" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-14T06:21:15.318Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="dsJ6zQMPXqQf4dgoogpj" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -714,6 +714,27 @@
         </mxCell>
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-45" value="&lt;pre style=&quot;text-align: left; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBufferQueue send&lt;span style=&quot;color:#871094;&quot;&gt;Queue（似乎不起作用）&lt;/span&gt;&lt;/pre&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;有ByteBufferQueue &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;writeQueue， 起作用的是这个&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3810" y="2470" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-46" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;writeQueue.put(data);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="2820" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-47" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3974.5" y="2630" as="sourcePoint" />
+            <mxPoint x="3974.5" y="2680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-48" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3969.5" y="2725" as="sourcePoint" />
+            <mxPoint x="3969.5" y="2765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-49" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getIoHub().execute(writer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3875" y="2773" width="200" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-50" value="关键的部分，开启一个线程处理writeQueue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="4150" y="2797" width="170" height="23" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
