@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T02:03:35.239Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ZrJyidtijeSLPc-19RTC" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-14T02:06:07.405Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Vu7XyqciYGafxKI2Fn4s" version="22.1.8" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -526,7 +526,7 @@
         <mxCell id="62yxdlusjtpypa1GuYyr-32" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;if (&lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;CREDENTAILS_AVAILABLE&lt;/span&gt;.equals(&lt;span style=&quot;color:#871094;&quot;&gt;state&lt;/span&gt;)) {  //当不在状态时，不发，这也是存储的原因之一&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;  while (&lt;span style=&quot;color:#0033b3;&quot;&gt;null &lt;/span&gt;!= (&lt;span style=&quot;color:#000000;&quot;&gt;request &lt;/span&gt;= &lt;span style=&quot;color:#871094;&quot;&gt;messages&lt;/span&gt;.poll())) {  // 一发就从queue中逐条发送完&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;  }&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="170" y="2872" width="660" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-1" value="所以上一层的发送数据到这一层开头就失去了引用，数据已经存储到新ByteBuffer中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-1" value="所以上一层的ByteBuffer到这一层开头就不再引用，数据已经存储到新ByteBuffer中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="707" y="2810" width="275" height="30" as="geometry" />
         </mxCell>
       </root>
