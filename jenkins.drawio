@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T06:56:03.913Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="pEPb4eo0zUdI2WcpeDyk" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T06:18:06.094Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Dr08LmjX47vhVgM77pmd" version="22.1.9" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="2608" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3753" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -526,28 +526,28 @@
         <mxCell id="62yxdlusjtpypa1GuYyr-32" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;if (&lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;CREDENTAILS_AVAILABLE&lt;/span&gt;.equals(&lt;span style=&quot;color:#871094;&quot;&gt;state&lt;/span&gt;)) {  //当不在状态时，不发，这也是存储的原因之一&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;  while (&lt;span style=&quot;color:#0033b3;&quot;&gt;null &lt;/span&gt;!= (&lt;span style=&quot;color:#000000;&quot;&gt;request &lt;/span&gt;= &lt;span style=&quot;color:#871094;&quot;&gt;messages&lt;/span&gt;.poll())) {  // 一发就从queue中逐条发送完&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;processWrite(&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;ByteBuffer &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;request)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;  }&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="170" y="2872" width="660" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-1" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;所以上一层的ByteBuffer到这一层开头就不再引用，数据已经存储到新ByteBuffer中&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-1" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;所以上一层的ByteBuffer到这一层开头就不再引用，数据已经存储到新ByteBuffer中&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="707" y="2810" width="275" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;final int &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;packetBufferSize &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;sslEngine&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;.getSession().getPacketBufferSize();&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 16709&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;final int &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;applicationBufferSize &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getApplicationBufferSize();  //16704&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;final int &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;packetBufferSize &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;sslEngine&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;.getSession().getPacketBufferSize();&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 16709&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;final int &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;applicationBufferSize &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getApplicationBufferSize();  //16704&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="430" y="2605" width="798" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-3" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-3" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="321.5" y="2965" as="sourcePoint" />
             <mxPoint x="321.5" y="3015" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer appBuffer = &lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getPacketBufferSize());&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font color=&quot;#080808&quot;&gt;SSLEngineResult result = &lt;/font&gt;&lt;span style=&quot;color: rgb(135, 16, 148); font-size: 9.8pt;&quot;&gt;sslEngine&lt;/span&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-size: 9.8pt;&quot;&gt;.wrap(request, &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 9.8pt;&quot;&gt;appBuffer&lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;); // &lt;/font&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;request的大小未知&lt;/font&gt;&lt;/b&gt;&lt;font color=&quot;#080808&quot;&gt;，有可能在过appBuffer, &lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;                                                      此时在BUFFER_OVERFLOW中要重新分配appBuffer的大小&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;while (&lt;span style=&quot;color:#000000;&quot;&gt;appBuffer&lt;/span&gt;.hasRemaining()) { //需要循环说明啥？ ？？&lt;br&gt;    next().doSend(&lt;span style=&quot;color:#000000;&quot;&gt;appBuffer&lt;/span&gt;);&lt;br&gt;}&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer appBuffer = &lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getPacketBufferSize());&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font color=&quot;#080808&quot;&gt;SSLEngineResult result = &lt;/font&gt;&lt;span style=&quot;color: rgb(135, 16, 148); font-size: 9.8pt;&quot;&gt;sslEngine&lt;/span&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-size: 9.8pt;&quot;&gt;.wrap(request, &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 9.8pt;&quot;&gt;appBuffer&lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;); // &lt;/font&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;request的大小未知&lt;/font&gt;&lt;/b&gt;&lt;font color=&quot;#080808&quot;&gt;，有可能在过appBuffer, &lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;                                                      此时在BUFFER_OVERFLOW中要重新分配appBuffer的大小&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;while (&lt;span style=&quot;color:#000000;&quot;&gt;appBuffer&lt;/span&gt;.hasRemaining()) { //需要循环说明啥？ ？？&lt;br&gt;    next().doSend(&lt;span style=&quot;color:#000000;&quot;&gt;appBuffer&lt;/span&gt;);&lt;br&gt;}&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="80" y="3010" width="830" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-5" value="&lt;pre style=&quot;border-color: var(--border-color); color: rgb(8, 8, 8); font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;AckFilterLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-5" value="&lt;pre style=&quot;border-color: var(--border-color); color: rgb(8, 8, 8); font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;AckFilterLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2340" y="2570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(appBuffer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(appBuffer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="114" y="3240" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-7" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-7" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="234" y="3130" as="sourcePoint" />
             <mxPoint x="235" y="3230" as="targetPoint" />
@@ -557,25 +557,25 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-8" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-8" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="321.5" y="2660" as="sourcePoint" />
             <mxPoint x="321.5" y="2710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-9" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-9" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="320" y="2670" as="sourcePoint" />
             <mxPoint x="1140" y="2710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-10" value="握手过程中，也可以直接发握手数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-10" value="握手过程中，也可以直接发握手数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1051" y="2715" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer appBuffer = &lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getPacketBufferSize());&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;SSLEngineResult result = &lt;span style=&quot;font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;sslEngine&lt;/span&gt;.wrap(EMPTY_BUFFER, &lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;appBuffer&lt;/span&gt;); // EMPTY_BUFFER的大小为0，但是是握手，有可能在要发送的超过appBuffer,&amp;nbsp;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;                                                      此时在BUFFER_OVERFLOW中要重新分配appBuffer的大小&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;br&gt;next().doSend(&lt;span style=&quot;color:#000000;&quot;&gt;appBuffer&lt;/span&gt;);&lt;br&gt;&lt;br&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer appBuffer = &lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getPacketBufferSize());&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;SSLEngineResult result = &lt;span style=&quot;font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;sslEngine&lt;/span&gt;.wrap(EMPTY_BUFFER, &lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;appBuffer&lt;/span&gt;); // EMPTY_BUFFER的大小为0，但是是握手，有可能在要发送的超过appBuffer,&amp;nbsp;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;                                                      此时在BUFFER_OVERFLOW中要重新分配appBuffer的大小&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;br&gt;next().doSend(&lt;span style=&quot;color:#000000;&quot;&gt;appBuffer&lt;/span&gt;);&lt;br&gt;&lt;br&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1020" y="2813" width="830" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-12" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-12" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1145.5" y="2760" as="sourcePoint" />
             <mxPoint x="1145.5" y="2810" as="targetPoint" />
@@ -585,10 +585,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(appBuffer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getNextSend().layer.doSend(appBuffer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1000" y="3030" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-14" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-14" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1139.5" y="2967.5" as="sourcePoint" />
             <mxPoint x="1139.5" y="3017.5" as="targetPoint" />
@@ -598,166 +598,209 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-15" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-15" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2390" y="2650" as="sourcePoint" />
             <mxPoint x="2390" y="2710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doSend(&lt;span style=&quot;color:#9e880d;&quot;&gt;@NonNull &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doSend(&lt;span style=&quot;color:#9e880d;&quot;&gt;@NonNull &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2280" y="2720" width="270" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-17" value="&lt;pre style=&quot;border-color: var(--border-color); color: rgb(8, 8, 8); font-size: 9.8pt; text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;ConcurrentLinkedQueue保存&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-17" value="&lt;pre style=&quot;border-color: var(--border-color); color: rgb(8, 8, 8); font-size: 9.8pt; text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;ConcurrentLinkedQueue保存&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-35" y="2803" width="165" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-18" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-18" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2320" y="2780" as="sourcePoint" />
             <mxPoint x="2320" y="2880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-19" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-19" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2450" y="2780" as="sourcePoint" />
             <mxPoint x="2570" y="2880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-20" value="当sendQueue有数据时（不止这种条件）先保存到sendQueue中&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sendQueue.put(data);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;flushSend(sendQueue);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-20" value="当sendQueue有数据时（不止这种条件）先保存到sendQueue中&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sendQueue.put(data);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;flushSend(sendQueue);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2190" y="2890" width="210" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-21" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-21" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2490" y="2770" as="sourcePoint" />
             <mxPoint x="2800" y="2875" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-22" value="当sendQueuue没数据时直接发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;next().doSend(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-22" value="当sendQueuue没数据时直接发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;next().doSend(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2490" y="2903" width="180" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-24" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-24" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2560" y="2725" width="220" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-25" value="发送自身数据next().doSend(&lt;font color=&quot;#871094&quot;&gt;self_data&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-25" value="发送自身数据next().doSend(&lt;font color=&quot;#871094&quot;&gt;self_data&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2735" y="2910" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-26" value="然后循环发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBuffer tmp = ByteBuffer.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;8192&lt;/span&gt;)；  //申请一个8192的ByteBuffer tmp&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;while (sendQueue.hasRemaining()) {&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  ((Buffer) &lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;).clear();&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font color=&quot;#080808&quot;&gt;  sendQueue.get(tmp); //&lt;/font&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;填满tmp 8192字节&lt;/font&gt;&lt;/b&gt;&lt;font color=&quot;#080808&quot;&gt;，或者不满8192但是sendQueue已经读取完毕&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  ptr.doSend(&lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;); //发送&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-26" value="然后循环发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBuffer tmp = ByteBuffer.&lt;span style=&quot;font-style:italic;&quot;&gt;allocate&lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;8192&lt;/span&gt;)；  //申请一个8192的ByteBuffer tmp&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;while (sendQueue.hasRemaining()) {&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  ((Buffer) &lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;).clear();&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font color=&quot;#080808&quot;&gt;  sendQueue.get(tmp); //&lt;/font&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;填满tmp 8192字节&lt;/font&gt;&lt;/b&gt;&lt;font color=&quot;#080808&quot;&gt;，或者不满8192但是sendQueue已经读取完毕&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;  ptr.doSend(&lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;); //发送&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2060" y="3060" width="610" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-27" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-27" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2300" y="2980" as="sourcePoint" />
             <mxPoint x="2300" y="3080" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-28" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;.AppleSystemUIFont&#39;;font-size:9.8pt;&quot;&gt;AgentProtocolClientFilterLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-28" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;.AppleSystemUIFont&#39;;font-size:9.8pt;&quot;&gt;AgentProtocolClientFilterLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3120" y="2560" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-29" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doSend(&lt;span style=&quot;color:#9e880d;&quot;&gt;@NonNull &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-29" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doSend(&lt;span style=&quot;color:#9e880d;&quot;&gt;@NonNull &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3085" y="2715" width="270" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-30" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-30" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3210" y="2640" as="sourcePoint" />
             <mxPoint x="3210" y="2690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-31" value="当sendQueue有数据时（不止这种条件）先保存到sendQueue中&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sendQueue.put(data);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;flushSend(sendQueue);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-31" value="当sendQueue有数据时（不止这种条件）先保存到sendQueue中&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sendQueue.put(data);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;flushSend(sendQueue);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3010" y="2831" width="210" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-32" value="当sendQueuue没数据时直接发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;next().doSend(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-32" value="当sendQueuue没数据时直接发送&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;next().doSend(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3280" y="2840" width="180" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-33" value="发送自身数据next().doSend(&lt;font color=&quot;#871094&quot;&gt;self_data&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-33" value="发送自身数据next().doSend(&lt;font color=&quot;#871094&quot;&gt;self_data&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3510" y="2833" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-34" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-34" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3290" y="2770" as="sourcePoint" />
             <mxPoint x="3590" y="2820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-35" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-35" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3270" y="2790" as="sourcePoint" />
             <mxPoint x="3370" y="2820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-36" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-36" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3210" y="2765" as="sourcePoint" />
             <mxPoint x="3120" y="2825" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-37" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-37" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3370" y="2730" width="220" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-38" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-38" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-690" y="2570" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-39" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-39" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2270" y="2520" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-40" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-40" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3120" y="2510" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-41" value="&lt;pre style=&quot;border-color: var(--border-color); color: rgb(8, 8, 8); font-size: 9.8pt; text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;有ConcurrentLinkedQueue保存&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-41" value="&lt;pre style=&quot;border-color: var(--border-color); color: rgb(8, 8, 8); font-size: 9.8pt; text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;有ConcurrentLinkedQueue保存&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="205" y="2550" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-42" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;.AppleSystemUIFont&#39;;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;BIONetworkLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-42" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;.AppleSystemUIFont&#39;;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;BIONetworkLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3870" y="2555" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-43" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doSend(&lt;span style=&quot;color:#9e880d;&quot;&gt;@NonNull &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-43" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doSend(&lt;span style=&quot;color:#9e880d;&quot;&gt;@NonNull &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3840" y="2690" width="270" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-44" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-44" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="4150" y="2697.5" width="220" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-45" value="&lt;pre style=&quot;text-align: left; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBufferQueue send&lt;span style=&quot;color:#871094;&quot;&gt;Queue（似乎不起作用）&lt;/span&gt;&lt;/pre&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;有ByteBufferQueue &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;writeQueue， 起作用的是这个&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-45" value="&lt;pre style=&quot;text-align: left; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBufferQueue send&lt;span style=&quot;color:#871094;&quot;&gt;Queue（似乎不起作用）&lt;/span&gt;&lt;/pre&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;有ByteBufferQueue &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;writeQueue， 起作用的是这个&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3810" y="2470" width="360" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-46" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;writeQueue.put(data);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-46" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;writeQueue.put(data);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2820" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-47" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-47" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3974.5" y="2630" as="sourcePoint" />
             <mxPoint x="3974.5" y="2680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-48" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-48" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3969.5" y="2725" as="sourcePoint" />
             <mxPoint x="3969.5" y="2765" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-49" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getIoHub().execute(writer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-49" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getIoHub().execute(writer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3875" y="2773" width="200" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-50" value="关键的部分，开启一个线程处理writeQueue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-50" value="关键的部分，开启一个线程处理writeQueue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="4150" y="2797" width="170" height="23" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-51" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;IOHub&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-51" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;IOHub&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="4580" y="2540" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-52" value="&lt;pre style=&quot;text-align: justify; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;write.run()&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;align=left;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-52" value="&lt;pre style=&quot;text-align: justify; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;write.run()&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3890" y="2910" width="110" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-53" value="write线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-53" value="write线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3790" y="2922" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-54" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=8 8;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-54" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=8 8;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3950" y="2847" as="sourcePoint" />
             <mxPoint x="3950" y="2900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-55" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer data = acquire(); //向IoHub中的bufferPool申请一个limit 8192(capacity实际是16916)的ByteBuffer&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;while(writeQueue.hasRemaining()){ //循环发送&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;writeQueue.get(&lt;span style=&quot;color:#000000;&quot;&gt;data&lt;/span&gt;)&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;((Buffer&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;).flip()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;    while (&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;.remaining() &amp;gt; &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(23, 80, 235);&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;) {&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;        &lt;/span&gt;out.write(&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;);              //out是通道，真正向通道发送数据（所以每次发送的数据最大就是8192字节）&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;    }&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;}&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-55" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer data = acquire(); //向IoHub中的bufferPool申请一个limit 8192(capacity实际是16916)的ByteBuffer&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;while(writeQueue.hasRemaining()){ //循环发送&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;writeQueue.get(&lt;span style=&quot;color:#000000;&quot;&gt;data&lt;/span&gt;)&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;((Buffer&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;).flip()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;    while (&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;.remaining() &amp;gt; &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(23, 80, 235);&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;) {&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;        &lt;/span&gt;out.write(&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;);              //out是通道，真正向通道发送数据（所以每次发送的数据最大就是8192字节）&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;    }&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;}&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3110" width="680" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-56" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-56" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3944.5" y="2963" as="sourcePoint" />
             <mxPoint x="3944.5" y="3003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ChannelApplicationLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1630" y="2605" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-2" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1580" y="2700" as="sourcePoint" />
+            <mxPoint x="-1580" y="2740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;write(&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;header, &lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1850" y="2745" width="390" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-4" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1440" y="2682.5" as="sourcePoint" />
+            <mxPoint x="-1260" y="2760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1440" y="2730" />
+              <mxPoint x="-1260" y="2730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-5" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;write(self_data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1380" y="2768" width="230" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-6" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1630" y="2813" as="sourcePoint" />
+            <mxPoint x="-1630" y="2893" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ptr.doSend(header)&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ptr.doSend(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1740" y="2913.5" width="230" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-8" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ptr.doSend(self_data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1340" y="2900" width="190" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-9" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1260" y="2818.5" as="sourcePoint" />
+            <mxPoint x="-1260" y="2898.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
