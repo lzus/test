@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-15T06:51:56.069Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="PLztVBj0afMcT19kVnhj" version="22.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T08:47:55.295Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="YlJaqSuV0hbQcdfrwAKO" version="22.1.9" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3753" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -734,7 +734,7 @@
           <mxGeometry x="3875" y="2773" width="200" height="37" as="geometry" />
         </mxCell>
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-50" value="关键的部分，开启一个线程处理writeQueue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="4150" y="2797" width="170" height="23" as="geometry" />
+          <mxGeometry x="4150" y="2787" width="170" height="23" as="geometry" />
         </mxCell>
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-51" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;IOHub&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="4580" y="2540" width="120" height="60" as="geometry" />
@@ -817,6 +817,21 @@
         </mxCell>
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-15" value="self_data(22 byte):&amp;nbsp; &quot;Protocol:JNLP4-connect&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3510" y="2877" width="260" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-18" value="" style="shape=link;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="-2060" y="3360" as="sourcePoint" />
+            <mxPoint x="4970.34" y="3373" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-19" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBuffer buffer = acquire();  //向IoHub中的bufferPool申请一个limit 8192(capacity实际是16916)的ByteBuffer&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;while (&lt;span style=&quot;color:#871094;&quot;&gt;in&lt;/span&gt;.isOpen()）{ //循环读取&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;in.read(&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;buffer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;    &lt;/span&gt;((Buffer&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;buffer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;).flip();&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;    &lt;/span&gt;while (&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;buffer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;.hasRemaining()) {&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;        onRead(&lt;span style=&quot;color:#000000;&quot;&gt;buffer&lt;/span&gt;);&lt;br&gt;    &lt;br&gt;    }&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3890" y="3480" width="830" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-20" value="read线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3760" y="3430" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-23" value="所有发送数据放入writeQueue中排队，而不是直接发送" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="4135" y="2823" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
