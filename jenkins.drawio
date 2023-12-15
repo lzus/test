@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-15T06:48:05.159Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="q6s3JpiXBDT3IqRn-j3R" version="22.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T06:50:48.299Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="HqYkfti-6RhIOvZWQrEN" version="22.1.9" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3753" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -814,6 +814,9 @@
         </mxCell>
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-14" value="self_data:&amp;nbsp; ACK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2735" y="2955" width="145" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-15" value="self_data(22 byte):&amp;nbsp; &quot;Protocol:JNLP4-connect&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3510" y="2877" width="260" height="33" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
