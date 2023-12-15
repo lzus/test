@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-15T09:10:09.007Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="i-BLoI-fhQoJ72EdUGHr" version="22.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T09:33:02.678Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="L3ACMN3TD8odXs5e-MdC" version="22.1.9" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3753" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -913,6 +913,18 @@
         </mxCell>
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-43" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer tmp = &lt;span style=&quot;color:#871094;&quot;&gt;recvQueue&lt;/span&gt;.newByteBuffer(); //申请8192的buffer&lt;br&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;while &lt;/span&gt;(&lt;span style=&quot;color:#871094;&quot;&gt;recvQueue&lt;/span&gt;.hasRemaining()) {&lt;br&gt;    ((&lt;span style=&quot;color:#000000;&quot;&gt;Buffer&lt;/span&gt;) &lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;).clear();&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;recvQueue&lt;/span&gt;.get(&lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;);&lt;br&gt;    ((&lt;span style=&quot;color:#000000;&quot;&gt;Buffer&lt;/span&gt;) &lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;).flip();&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;ptr&lt;/span&gt;.onRecv(&lt;span style=&quot;color:#000000;&quot;&gt;tmp&lt;/span&gt;);&lt;br&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2465" y="3725" width="520" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-44" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;onRecv(&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;readBuffer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="235" y="3410" width="245" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-45" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="349.33" y="3470" as="sourcePoint" />
+            <mxPoint x="349.33" y="3530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-46" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer appBuffer = stack().acquire(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getApplicationBufferSize()); //向IoHub的pool申请一个&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="3540" width="1360" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
