@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-15T16:10:38.627Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5BvgImcTRcsOhbMTTbAk" version="22.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-16T09:33:42.407Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="E0sN9t3tdvihZrQmxhRf" version="22.1.11" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3674" dy="1832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3435" dy="1699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -689,7 +689,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-37" value="&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;data的大小未知&lt;/font&gt;&lt;/b&gt;， 可能会很大，不止8192(上一层的发送就已经未知大小)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="3370" y="2730" width="220" height="25" as="geometry" />
+          <mxGeometry x="3350" y="2705" width="220" height="25" as="geometry" />
         </mxCell>
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-38" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;有ByteBufferQueue &lt;span style=&quot;color:#871094;&quot;&gt;sendQueue&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-690" y="2570" width="230" height="30" as="geometry" />
@@ -742,7 +742,7 @@
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-52" value="&lt;pre style=&quot;text-align: justify; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;write.run()&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3890" y="2910" width="110" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-53" value="write线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="cQ-BIh9Kksjrct9Q46Q1-53" value="&lt;b&gt;write线程&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3790" y="2922" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cQ-BIh9Kksjrct9Q46Q1-54" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=8 8;" parent="1" edge="1">
@@ -827,7 +827,7 @@
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-19" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ByteBuffer buffer = acquire();  //向IoHub中的bufferPool申请一个limit 8192(capacity实际是16916)的ByteBuffer&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;while (&lt;span style=&quot;color:#871094;&quot;&gt;in&lt;/span&gt;.isOpen()）{ //循环读取&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;in.read(&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;buffer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;    &lt;/span&gt;((Buffer&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;buffer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;).flip();&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;    &lt;/span&gt;while (&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;buffer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;.hasRemaining()) {&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;        onRead(&lt;span style=&quot;color:#000000;&quot;&gt;buffer&lt;/span&gt;);&lt;br&gt;    &lt;br&gt;    }&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3890" y="3480" width="830" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="0n1Nj1Sivc76l-1BmOpA-20" value="read线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-20" value="&lt;b&gt;read线程&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="3760" y="3430" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-23" value="所有发送数据放入writeQueue中排队，而不是直接发送" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -899,8 +899,8 @@
             <mxPoint x="2545" y="3560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0n1Nj1Sivc76l-1BmOpA-40" value="recvQueue有数据则放入recvQueue中排队" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="2490" y="3560" width="245" height="30" as="geometry" />
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-40" value="recvQueue有数据则放入recvQueue中排队&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;recvQueue.put(data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2465" y="3580" width="245" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-41" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;flushRecv()&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2465" y="3620" width="200" height="30" as="geometry" />
@@ -926,17 +926,26 @@
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-46" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ByteBuffer appBuffer = stack().acquire(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession().getApplicationBufferSize()); 向IoHub中的bufferPool申请一个limit 16704(capacity实际是16916)的ByteBuffer&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="3540" width="1360" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="Hq2ewR72OK_mTviOB1mo-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;JnlpProtocol4Handler.connect(....)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Hq2ewR72OK_mTviOB1mo-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;JnlpProtocol4Handler.connect(....)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="425" y="610" width="436" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Hq2ewR72OK_mTviOB1mo-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="Hq2ewR72OK_mTviOB1mo-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="375" y="650" as="sourcePoint" />
             <mxPoint x="1035" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Hq2ewR72OK_mTviOB1mo-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;6.connect&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Hq2ewR72OK_mTviOB1mo-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;6.connect&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="277" y="590" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="7xBDg8h49Le0EDPpn1vZ-2" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="3710" width="80" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="7xBDg8h49Le0EDPpn1vZ-3" value="最大8192字节" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="4040" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7xBDg8h49Le0EDPpn1vZ-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;AckFilterLayer&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;发送“ACK”字符串&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;接收“ACK”字符串&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;只有这两样处理完成&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2320" y="4100" width="200" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
