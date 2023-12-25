@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-16T10:05:10.782Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="y2hxqu89NHDHHhiBTzxh" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-25T15:18:29.298Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="FYR77W1kDWrkSNO-akAg" version="22.1.11" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3435" dy="1699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3077" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -938,14 +938,50 @@
         <mxCell id="Hq2ewR72OK_mTviOB1mo-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;6.connect&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="277" y="590" width="90" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="7xBDg8h49Le0EDPpn1vZ-2" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=90;" vertex="1" parent="1">
+        <mxCell id="7xBDg8h49Le0EDPpn1vZ-2" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=90;" parent="1" vertex="1">
           <mxGeometry x="2420" y="3710" width="80" height="530" as="geometry" />
         </mxCell>
-        <mxCell id="7xBDg8h49Le0EDPpn1vZ-3" value="最大8192字节" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="7xBDg8h49Le0EDPpn1vZ-3" value="最大8192字节" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2340" y="4040" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7xBDg8h49Le0EDPpn1vZ-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;AckFilterLayer的作用：&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;发送“ACK”字符串&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;接收“ACK”字符串&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;只有这两样处理完成，才能进一步send其他数据, 不然就放在sendQueue里&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="7xBDg8h49Le0EDPpn1vZ-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;AckFilterLayer的作用：&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;发送“ACK”字符串&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;接收“ACK”字符串&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;只有这两样处理完成，才能进一步send其他数据, 不然就放在sendQueue里&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2185" y="4092" width="520" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-1" value="" style="shape=link;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="-2050" y="3837" as="sourcePoint" />
+            <mxPoint x="4980.34" y="3850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener = JnlpProtocol4Handler#Handler&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="294" y="3880" width="336" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="3920" as="sourcePoint" />
+            <mxPoint x="424" y="3970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-5" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.onHandshakeCompleted(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession())&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="3980" width="431" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="4020" as="sourcePoint" />
+            <mxPoint x="424" y="4070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireBeforeProperties&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="288" y="4084" width="403" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="4120" as="sourcePoint" />
+            <mxPoint x="425" y="4170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;this.&lt;span style=&quot;color:#871094;&quot;&gt;certificate &lt;/span&gt;= certificate;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.beforeProperties(jnlp4ConnectionState&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="304.25" y="4170" width="381.5" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
