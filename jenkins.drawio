@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-25T15:18:29.298Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="FYR77W1kDWrkSNO-akAg" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-25T15:29:22.736Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="gvjOhbCesjfF3Ns6Idwo" version="22.1.11" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3077" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -982,6 +982,9 @@
         </mxCell>
         <mxCell id="5ELjpxrQgCRXJpdXmUJf-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;this.&lt;span style=&quot;color:#871094;&quot;&gt;certificate &lt;/span&gt;= certificate;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.beforeProperties(jnlp4ConnectionState&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="304.25" y="4170" width="381.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-11" value="listerner.beforeProperties(jnlp4ConnectionState)主要是验证证书的有效性（从证书拿出公钥比较）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="341" y="4260" width="299" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
