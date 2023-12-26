@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-25T16:00:39.762Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="JkCje1J1mmmoJq0UuaFO" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-26T15:10:59.146Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mZKCh6xCEZNSIKlnjdaB" version="22.1.11" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3077" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3435" dy="1699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -947,44 +947,80 @@
         <mxCell id="7xBDg8h49Le0EDPpn1vZ-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;AckFilterLayer的作用：&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;发送“ACK”字符串&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;接收“ACK”字符串&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;b&gt;只有这两样处理完成，才能进一步send其他数据, 不然就放在sendQueue里&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2185" y="4092" width="520" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-1" value="" style="shape=link;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-1" value="" style="shape=link;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="-2050" y="3837" as="sourcePoint" />
             <mxPoint x="4980.34" y="3850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener = JnlpProtocol4Handler#Handler&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener = JnlpProtocol4Handler#Handler&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="294" y="3880" width="336" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="424" y="3920" as="sourcePoint" />
             <mxPoint x="424" y="3970" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-5" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.onHandshakeCompleted(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession())&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-5" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.onHandshakeCompleted(&lt;span style=&quot;color:#871094;&quot;&gt;sslEngine&lt;/span&gt;.getSession())&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="290" y="3980" width="431" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="424" y="4020" as="sourcePoint" />
             <mxPoint x="424" y="4070" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireBeforeProperties&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireBeforeProperties（X509Certificate）&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="288" y="4084" width="403" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-8" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="425" y="4120" as="sourcePoint" />
             <mxPoint x="425" y="4170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;this.&lt;span style=&quot;color:#871094;&quot;&gt;certificate &lt;/span&gt;= certificate;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.beforeProperties(jnlp4ConnectionState&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="304.25" y="4170" width="381.5" height="70" as="geometry" />
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;this.&lt;span style=&quot;color:#871094;&quot;&gt;certificate &lt;/span&gt;= certificate; //保存证书到jnlp4ConnectionState&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;lifecycle = &lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;BEFORE_PROPERTIES&lt;/span&gt;;//设置生命周期到jnlp4ConnectionState&lt;/pre&gt;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.beforeProperties(jnlp4ConnectionState&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="239.25" y="4170" width="590.75" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="5ELjpxrQgCRXJpdXmUJf-11" value="listerner.beforeProperties(jnlp4ConnectionState)主要是验证证书的有效性（从证书拿出公钥比较）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="341" y="4260" width="299" height="30" as="geometry" />
+        <mxCell id="5ELjpxrQgCRXJpdXmUJf-11" value="listerner.beforeProperties(jnlp4ConnectionState)主要是验证证书的有效性（从证书拿出公钥比较）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="340" y="4280" width="299" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-9" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener = JnlpProtocol4Handler#Handler&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-714" y="3940" width="336" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-584" y="3980" as="sourcePoint" />
+            <mxPoint x="-584" y="4030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;listener.onReceiveHeaders(&lt;span style=&quot;color:#000000;&quot;&gt;headers&lt;/span&gt;)&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-718" y="4040" width="431" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-584" y="4080" as="sourcePoint" />
+            <mxPoint x="-584" y="4130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireAfterProperties(headers)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="4144" width="403" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-583" y="4180" as="sourcePoint" />
+            <mxPoint x="-583" y="4230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-15" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;this&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;properties &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;HashMap&amp;lt;&amp;gt;(headers)&lt;/span&gt;;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.afterProperties&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-703.75" y="4230" width="381.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-16" value="listerner.afterProperties(jnlp4ConnectionState)主要是&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#871094;&quot;&gt;设置生命周期状态：lifecycle &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;APPROVED&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-667" y="4320" width="299" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-17" value="headers是{&quot;JnlpAgentProtocol.cookie&quot;:&quot;04328d1c5ae687437736d044364e0c100562d7c10ac849ca9f136e0bf6c06a99&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-441" y="3990" width="555" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
