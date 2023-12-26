@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T15:10:59.146Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mZKCh6xCEZNSIKlnjdaB" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-26T15:56:59.483Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="r2PCAvbxTxHtGX8YjtAJ" version="22.1.11" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1021,6 +1021,57 @@
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-17" value="headers是{&quot;JnlpAgentProtocol.cookie&quot;:&quot;04328d1c5ae687437736d044364e0c100562d7c10ac849ca9f136e0bf6c06a99&quot;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-441" y="3990" width="555" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-18" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;onRecvClosed&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1530" y="4440" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1330" y="4454.5" as="sourcePoint" />
+            <mxPoint x="-1390" y="4454.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-20" value="如果master关闭（比如jenkins关闭）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1410" y="4410" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1465.5" y="4470" as="sourcePoint" />
+            <mxPoint x="-1465.5" y="4520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-22" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;channel.terminate(cause）&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1520" y="4540" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-23" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener=JnlpProtocol4Handler#Handler&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.onClosed(&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;channel,&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;cause)&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1620" y="4650" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1455.5" y="4570" as="sourcePoint" />
+            <mxPoint x="-1455.5" y="4620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-25" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireChannelClosed(cause)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1593" y="4740" width="403" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-26" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1456" y="4776" as="sourcePoint" />
+            <mxPoint x="-1456" y="4826" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-27" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;closeCause = cause;    设置close原因&lt;br&gt;&lt;span style=&quot;color:#871094;&quot;&gt;lifecycle &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;CHANNEL_CLOSED&lt;/span&gt;;  设置生命周期&lt;/pre&gt;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.channelClosed&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1576.75" y="4826" width="466.75" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-28" value="listerner.channelClosed&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState)是空函数&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1540" y="4916" width="299" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="086Q5PK0GUfrbWCXx4qv-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1450" y="4690" as="sourcePoint" />
+            <mxPoint x="-1450" y="4740" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
