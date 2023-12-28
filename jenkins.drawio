@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T16:03:02.490Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="8ScrVxZ6l8qs9m3QcoPP" version="22.1.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T02:48:01.492Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="zi1F3MQrlLRabuaVXvNR" version="22.1.15" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3276" dy="1607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,7 +65,7 @@
           <mxGeometry x="754" y="223.75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qVIc31OxtEuiZdBQp6vo-26" value="IOHub #&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;IOHubSelectorWatcher&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="564" y="212.5" width="200" height="37.5" as="geometry" />
+          <mxGeometry x="550" y="212.5" width="226" height="37.5" as="geometry" />
         </mxCell>
         <mxCell id="qVIc31OxtEuiZdBQp6vo-27" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -309,7 +309,7 @@
         <mxCell id="FhYZfcETigPhw3zmsrr1-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ConnectionHeadersFilterLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-490" y="850" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FhYZfcETigPhw3zmsrr1-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;NetworkLayer&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FhYZfcETigPhw3zmsrr1-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;.AppleSystemUIFont&amp;quot;; font-size: 9.8pt;&quot;&gt;BIONetworkLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-105" y="1460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FhYZfcETigPhw3zmsrr1-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
@@ -345,7 +345,7 @@
         <mxCell id="FhYZfcETigPhw3zmsrr1-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;getIoHub().execute(writer)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="170" y="1520" width="210" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="FhYZfcETigPhw3zmsrr1-16" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个writequeue: ByteBufferQueue包含new ByteBuffer[&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#871094&quot;&gt;&lt;i&gt;16&lt;/i&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#080808&quot;&gt;]， 每个8192字节，&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#080808&quot;&gt;client发送的内容都会写到这个writequeue来发送（不包含sslEngine.beginHanshake()）;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个recvqueue ByteBufferQueue用来写入接收的数据；&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个sendqueue：ByteBufferQueue也是用于发送数据（最终还是写入writequeue来发送）；&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="FhYZfcETigPhw3zmsrr1-16" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个writequeue: ByteBufferQueue包含new ByteBuffer[&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#871094&quot;&gt;&lt;i&gt;16&lt;/i&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#080808&quot;&gt;]， 每个8192字节，&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#080808&quot;&gt;client发送的内容都会写到这个writequeue来发送;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个recvqueue ByteBufferQueue用来写入接收的数据；&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个sendqueue：ByteBufferQueue也是用于发送数据（最终还是写入writequeue来发送）；&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="1370" width="698" height="90" as="geometry" />
         </mxCell>
         <mxCell id="FhYZfcETigPhw3zmsrr1-17" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;创建一个sendqueue:ByteBufferQueue包含new ByteBuffer[&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#871094&quot;&gt;&lt;i&gt;16&lt;/i&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#080808&quot;&gt;]， &lt;/font&gt;每个8192字节，用于发送数据， &lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;经由此层发送的数据，附加到sendqueue中进行发送；&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;启动开始发送&quot;Protocol:JNLP4-connect&quot;&lt;span style=&quot;color: rgb(8, 8, 8); font-size: 9.8pt;&quot;&gt;；-- 24字节==2字节长度+22字节串&lt;/span&gt;&lt;/pre&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;&lt;/font&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font style=&quot;font-size: 9.8pt;&quot; color=&quot;#080808&quot;&gt;接收的数据不处理，直接交给下一层，所以没有recv queue相关属性&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -1121,61 +1121,61 @@
         <mxCell id="086Q5PK0GUfrbWCXx4qv-42" value="listerner.afterDisconnect&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState)是空函数&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1126" y="4940" width="299" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-2" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="4990" y="5300" as="sourcePoint" />
             <mxPoint x="4980" y="-70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;独立的线程监听：TcpSlaveAgentListener&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-3" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;独立的线程监听：TcpSlaveAgentListener&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="5290" y="465" width="370" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-4" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;master side&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-4" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;master side&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5300" y="70" width="240" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="5450" y="620" as="sourcePoint" />
             <mxPoint x="5450" y="680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-7" value="当来socket连接时，启动新线程来处理连接请求" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-7" value="当来socket连接时，启动新线程来处理连接请求" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5490" y="790" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-8" value="accept" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-8" value="accept" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="5400" y="680" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-9" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;new TcpSlaveAgentListener#ConnectionHandler(socket&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;).start();&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-9" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;new TcpSlaveAgentListener#ConnectionHandler(socket&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;).start();&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5360" y="820" width="250" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="5459.58" y="765.5" as="sourcePoint" />
             <mxPoint x="5459.58" y="825.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-11" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="5459.58" y="870" as="sourcePoint" />
             <mxPoint x="5459.58" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-12" value="调用：JnlpSlaveAgentProtocol4.handle(socket)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-12" value="调用：JnlpSlaveAgentProtocol4.handle(socket)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5360" y="930" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-13" value="JnlpSlaveAgentProtocol4是单例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-13" value="JnlpSlaveAgentProtocol4是单例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5430" y="900" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-14" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="5459.58" y="960" as="sourcePoint" />
             <mxPoint x="5460" y="1010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-15" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sslContext = &lt;span style=&quot;color:#000000;&quot;&gt;SSLContext&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;getInstance&lt;/span&gt;(&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;TLS&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sslContext.init(&lt;span style=&quot;color:#000000;&quot;&gt;kmf&lt;/span&gt;.getKeyManagers(), &lt;span style=&quot;color:#000000;&quot;&gt;trustManagers&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;this.handler = &lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;JnlpProtocol4Handler(&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;JnlpAgentReceiver&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;DATABASE&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;Computer&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;threadPoolForRemoting&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;hub&lt;/span&gt;.getHub(),&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;sslContext&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;false&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;true&lt;/span&gt;);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-15" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sslContext = &lt;span style=&quot;color:#000000;&quot;&gt;SSLContext&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;getInstance&lt;/span&gt;(&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;TLS&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sslContext.init(&lt;span style=&quot;color:#000000;&quot;&gt;kmf&lt;/span&gt;.getKeyManagers(), &lt;span style=&quot;color:#000000;&quot;&gt;trustManagers&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;this.handler = &lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;JnlpProtocol4Handler(&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;JnlpAgentReceiver&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;DATABASE&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;Computer&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;threadPoolForRemoting&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;hub&lt;/span&gt;.getHub(),&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;sslContext&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;false&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;true&lt;/span&gt;);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5281.5" y="1020" width="398.5" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-16" value="生成sslContext并初始化sslContext;&lt;br&gt;生成JnlpProtocol4Handler， 注意，下列代码只有来第一个连接时才执行一次，意味着JnlpProtocol4Handler也只有一例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-16" value="生成sslContext并初始化sslContext;&lt;br&gt;生成JnlpProtocol4Handler， 注意，下列代码只有来第一个连接时才执行一次，意味着JnlpProtocol4Handler也只有一例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5710" y="1010" width="400" height="30" as="geometry" />
         </mxCell>
       </root>
