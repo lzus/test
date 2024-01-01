@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-01T15:08:04.112Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Z1sMBCiKyIUXW92ukYOi" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-01T15:33:41.890Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="WCGTwl-qzYiwN9wZPjrz" version="22.1.15" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -297,7 +297,7 @@
             <mxPoint x="-190" y="1130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LlYnxhrn1TKEqOn0lMnf-1" value="轮询selector, 如果有事件，取出IOHubReadyListener线程对象，&lt;span style=&quot;background-color: initial;&quot;&gt;用线程池pool去运行&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="LlYnxhrn1TKEqOn0lMnf-1" value="while(IOHub.isOpen()&lt;span style=&quot;background-color: initial;&quot;&gt;)轮询selector, 如果有事件，取出IOHubReadyListener线程对象，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;用线程池pool去运行&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="864" y="175" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LlYnxhrn1TKEqOn0lMnf-2" value="只是起到selector wakeup的作用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -1199,17 +1199,17 @@
         <mxCell id="UaWB042FTOmvel8zbl6t-8" value="注意这时还是Thread0线程，在这个线程里并不真正进行把socketChannel注册到selector中，只是添加到注册队列registrations；真正的注册在IOHub的poolthread0线程中，它会读取注册队列&lt;span style=&quot;color: rgb(135, 16, 148); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; text-align: left;&quot;&gt;registrations&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;进行注册&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1320" y="1450" width="350" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="UaWB042FTOmvel8zbl6t-9" value="IOHub pool-thread0线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1054" y="1754" width="172" height="70" as="geometry" />
+        <mxCell id="UaWB042FTOmvel8zbl6t-9" value="IOHub pool-thread0线程,while(IOHub.isOpen())轮询调用processRegistrations()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1148" y="1720" width="172" height="70" as="geometry" />
         </mxCell>
         <mxCell id="UaWB042FTOmvel8zbl6t-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1320" y="1754" as="sourcePoint" />
-            <mxPoint x="1320" y="1824" as="targetPoint" />
+            <mxPoint x="1320" y="1720" as="sourcePoint" />
+            <mxPoint x="1320" y="1790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="UaWB042FTOmvel8zbl6t-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;for (&lt;span style=&quot;color:#000000;&quot;&gt;Registration r &lt;/span&gt;= &lt;span style=&quot;color:#871094;&quot;&gt;registrations&lt;/span&gt;.poll(); &lt;span style=&quot;color:#000000;&quot;&gt;r &lt;/span&gt;!= &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;; &lt;span style=&quot;color:#000000;&quot;&gt;r &lt;/span&gt;= &lt;span style=&quot;color:#871094;&quot;&gt;registrations&lt;/span&gt;.poll()) {&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;try &lt;/span&gt;{&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;SelectionKey selectionKey &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;channel&lt;/span&gt;.register(&lt;span style=&quot;color:#871094;&quot;&gt;selector&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;ops&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;listener&lt;/span&gt;);&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;processedSomething &lt;/span&gt;= &lt;span style=&quot;color:#0033b3;&quot;&gt;true&lt;/span&gt;;&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;callback&lt;/span&gt;.onRegistered(&lt;span style=&quot;color:#000000;&quot;&gt;selectionKey&lt;/span&gt;);&lt;br&gt;    } &lt;span style=&quot;color:#0033b3;&quot;&gt;catch &lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;ClosedChannelException &lt;/span&gt;e) {&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;callback&lt;/span&gt;.onClosedChannel(e);&lt;br&gt;    }&lt;br&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1048" y="1860" width="180" height="76" as="geometry" />
+          <mxGeometry x="1046" y="1900" width="180" height="76" as="geometry" />
         </mxCell>
         <mxCell id="UaWB042FTOmvel8zbl6t-12" value="Thread0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="848" y="1415" width="60" height="30" as="geometry" />
@@ -1225,6 +1225,45 @@
         </mxCell>
         <mxCell id="UaWB042FTOmvel8zbl6t-15" value="Thread0线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1180" y="1622.5" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1310" y="1990" as="sourcePoint" />
+            <mxPoint x="1310" y="2060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-17" value="当有读写事件时（只注册了读写事件），即selectionKey.readyOps()&lt;span style=&quot;background-color: initial;&quot;&gt;调用&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1034" y="2070" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-18" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;executor.execute(new OnReady(&lt;span style=&quot;font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;_id&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;, &lt;/span&gt;SelectionKey, NIONetworkLayer, ops&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="2100" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-19" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;processRegistrations()&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1223" y="1790" width="177" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1320" y="1820" as="sourcePoint" />
+            <mxPoint x="1320" y="1870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-22" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2160" y="1730" as="sourcePoint" />
+            <mxPoint x="2160" y="1800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-23" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;processInterestOps()&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2090" y="1810" width="165" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-25" value="IOHub pool-thread0线程,while(IOHub.isOpen())轮询调用processInterestOps()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1940" y="1730" width="172" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-26" value="修改interestOps" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2090" y="1850" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-27" value="并且删除readyOps()，&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;&lt;span style=&quot;font-size: 13.0667px; background-color: rgb(255, 255, 255);&quot;&gt;即&lt;/span&gt;&lt;/font&gt;key&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.interestOps(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;key&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.interestOps() &amp;amp; ~&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ops&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;);&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1034" y="2130" width="450" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
