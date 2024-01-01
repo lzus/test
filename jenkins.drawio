@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-01T09:02:53.046Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="AbYNddz0M49SXq_9nhEW" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-01T14:56:34.640Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mmDGX54zxWrgohAv5_Hi" version="22.1.15" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1193,11 +1193,26 @@
             <mxPoint x="1310" y="1520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UaWB042FTOmvel8zbl6t-7" value="Thread0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1200" y="1470" width="60" height="30" as="geometry" />
+        <mxCell id="UaWB042FTOmvel8zbl6t-7" value="Thread0线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1470" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="UaWB042FTOmvel8zbl6t-8" value="注意这时还是Thread0线程，在这个线程里并不真正进行把socketChannel注册到selector中，只是添加到注册队列；真正的注册在IOHub的poolthread0线程中，它会读取注册队列进行注册" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="1450" width="290" height="80" as="geometry" />
+        <mxCell id="UaWB042FTOmvel8zbl6t-8" value="注意这时还是Thread0线程，在这个线程里并不真正进行把socketChannel注册到selector中，只是添加到注册队列registrations；真正的注册在IOHub的poolthread0线程中，它会读取注册队列&lt;span style=&quot;color: rgb(135, 16, 148); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; text-align: left;&quot;&gt;registrations&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;进行注册&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="1450" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-9" value="IOHub pool-thread0线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1660" width="172" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1320" y="1650" as="sourcePoint" />
+            <mxPoint x="1320" y="1720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;for (&lt;span style=&quot;color:#000000;&quot;&gt;Registration r &lt;/span&gt;= &lt;span style=&quot;color:#871094;&quot;&gt;registrations&lt;/span&gt;.poll(); &lt;span style=&quot;color:#000000;&quot;&gt;r &lt;/span&gt;!= &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;; &lt;span style=&quot;color:#000000;&quot;&gt;r &lt;/span&gt;= &lt;span style=&quot;color:#871094;&quot;&gt;registrations&lt;/span&gt;.poll()) {&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;try &lt;/span&gt;{&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;SelectionKey selectionKey &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;channel&lt;/span&gt;.register(&lt;span style=&quot;color:#871094;&quot;&gt;selector&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;ops&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;listener&lt;/span&gt;);&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;processedSomething &lt;/span&gt;= &lt;span style=&quot;color:#0033b3;&quot;&gt;true&lt;/span&gt;;&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;callback&lt;/span&gt;.onRegistered(&lt;span style=&quot;color:#000000;&quot;&gt;selectionKey&lt;/span&gt;);&lt;br&gt;    } &lt;span style=&quot;color:#0033b3;&quot;&gt;catch &lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;ClosedChannelException &lt;/span&gt;e) {&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;r&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;callback&lt;/span&gt;.onClosedChannel(e);&lt;br&gt;    }&lt;br&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="1774" width="180" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-12" value="Thread0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="836" y="1420" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
