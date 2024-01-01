@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-01T15:36:02.560Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="__kY9cRZuUh8DqJd30r2" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-01T15:40:03.444Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="pXSxOKg6P3qStNHXDVt8" version="22.1.15" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1264,6 +1264,15 @@
         </mxCell>
         <mxCell id="UaWB042FTOmvel8zbl6t-27" value="&lt;font color=&quot;#6666ff&quot;&gt;并且删除readyOps()，&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.0667px; background-color: rgb(255, 255, 255);&quot;&gt;即&lt;/span&gt;&lt;/font&gt;key&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.interestOps(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;key&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.interestOps() &amp;amp; ~&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ops&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1034" y="2130" width="450" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-28" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FF3333;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1250" y="2210" as="sourcePoint" />
+            <mxPoint x="1250" y="2280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UaWB042FTOmvel8zbl6t-29" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;NIONetworkLayer.ready()处理读写事件&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="2290" width="220" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
