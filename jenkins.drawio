@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T15:21:43.507Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="gStEmE8Va_ASo0EKM0FY" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-05T02:47:36.457Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="iXb7ret72mZd9S4j-8a3" version="22.1.16" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3949" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1023,103 +1023,103 @@
           <mxGeometry x="-441" y="3990" width="555" height="40" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-18" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;onRecvClosed&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1530" y="4440" width="130" height="30" as="geometry" />
+          <mxGeometry x="-1796.75" y="4450" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-19" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1170" y="4455" as="sourcePoint" />
-            <mxPoint x="-1340" y="4454.5" as="targetPoint" />
+            <mxPoint x="-1436.75" y="4465" as="sourcePoint" />
+            <mxPoint x="-1606.75" y="4464.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-20" value="如果master关闭（比如jenkins关闭）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1300" y="4380" width="130" height="30" as="geometry" />
+          <mxGeometry x="-1566.75" y="4390" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-21" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1465.5" y="4470" as="sourcePoint" />
-            <mxPoint x="-1465.5" y="4520" as="targetPoint" />
+            <mxPoint x="-1732.25" y="4480" as="sourcePoint" />
+            <mxPoint x="-1732.25" y="4530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-22" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;channel.terminate(cause）&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1520" y="4540" width="190" height="20" as="geometry" />
+          <mxGeometry x="-1786.75" y="4550" width="190" height="20" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-23" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener=JnlpProtocol4Handler#Handler&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.onClosed(&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;channel,&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;cause)&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1620" y="4650" width="440" height="30" as="geometry" />
+          <mxGeometry x="-1886.75" y="4660" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-24" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1455.5" y="4570" as="sourcePoint" />
-            <mxPoint x="-1455.5" y="4620" as="targetPoint" />
+            <mxPoint x="-1722.25" y="4580" as="sourcePoint" />
+            <mxPoint x="-1722.25" y="4630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-25" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireChannelClosed(cause)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1593" y="4740" width="403" height="26" as="geometry" />
+          <mxGeometry x="-1859.75" y="4750" width="403" height="26" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-26" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1456" y="4776" as="sourcePoint" />
-            <mxPoint x="-1456" y="4826" as="targetPoint" />
+            <mxPoint x="-1722.75" y="4786" as="sourcePoint" />
+            <mxPoint x="-1722.75" y="4836" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-27" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;closeCause = cause;    设置close原因&lt;br&gt;&lt;span style=&quot;color:#871094;&quot;&gt;lifecycle &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;CHANNEL_CLOSED&lt;/span&gt;;  设置生命周期&lt;/pre&gt;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.channelClosed&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1670" y="4830" width="466.75" height="70" as="geometry" />
+          <mxGeometry x="-1936.75" y="4840" width="466.75" height="70" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-28" value="listerner.channelClosed&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState)是空函数&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1579" y="4930" width="299" height="30" as="geometry" />
+          <mxGeometry x="-1845.75" y="4940" width="299" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-29" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1450" y="4690" as="sourcePoint" />
-            <mxPoint x="-1450" y="4740" as="targetPoint" />
+            <mxPoint x="-1716.75" y="4700" as="sourcePoint" />
+            <mxPoint x="-1716.75" y="4750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.642;exitY=1.183;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1438.27" y="4472.75" as="sourcePoint" />
-            <mxPoint x="-1100" y="4520" as="targetPoint" />
+            <mxPoint x="-1705.02" y="4482.75" as="sourcePoint" />
+            <mxPoint x="-1366.75" y="4530" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-1100" y="4473" />
+              <mxPoint x="-1366.75" y="4483" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-31" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;.AppleSystemUIFont&#39;;font-size:9.8pt;&quot;&gt;ProtocolStack.onClosed(&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;cause)&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1180" y="4540" width="200" height="20" as="geometry" />
+          <mxGeometry x="-1446.75" y="4550" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-32" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener=JnlpProtocol4Handler#Handler&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.onClosed(ProtocolStack, &lt;span style=&quot;font-size: 9.8pt;&quot;&gt;cause)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1250" y="4650" width="440" height="30" as="geometry" />
+          <mxGeometry x="-1516.75" y="4660" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-34" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1090" y="4570" as="sourcePoint" />
-            <mxPoint x="-1090" y="4620" as="targetPoint" />
+            <mxPoint x="-1356.75" y="4580" as="sourcePoint" />
+            <mxPoint x="-1356.75" y="4630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-35" value="先关闭channle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1590" y="4490" width="60" height="30" as="geometry" />
+          <mxGeometry x="-1856.75" y="4500" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-36" value="再关闭stack" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1080" y="4480" width="60" height="30" as="geometry" />
+          <mxGeometry x="-1346.75" y="4490" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-37" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;jnlp4ConnectionState.fireAfterDisconnect()&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1170" y="4755" width="403" height="26" as="geometry" />
+          <mxGeometry x="-1436.75" y="4765" width="403" height="26" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-38" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1033" y="4791" as="sourcePoint" />
-            <mxPoint x="-1033" y="4841" as="targetPoint" />
+            <mxPoint x="-1299.75" y="4801" as="sourcePoint" />
+            <mxPoint x="-1299.75" y="4851" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-40" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1070" y="4690" as="sourcePoint" />
-            <mxPoint x="-1070" y="4740" as="targetPoint" />
+            <mxPoint x="-1336.75" y="4700" as="sourcePoint" />
+            <mxPoint x="-1336.75" y="4750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-41" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;br&gt;lifecycle &lt;span style=&quot;font-size: 9.8pt;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(0, 0, 0);&quot;&gt;State&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; color: rgb(135, 16, 148); font-style: italic;&quot;&gt;DISCONNECTED&lt;/span&gt;;  设置生命周期&lt;/pre&gt;&lt;/pre&gt;listener=Engine#EngineJnlpConnectionStateListener&lt;br&gt;listerner.afterDisconnect&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1220" y="4850" width="466.75" height="70" as="geometry" />
+          <mxGeometry x="-1486.75" y="4860" width="466.75" height="70" as="geometry" />
         </mxCell>
         <mxCell id="086Q5PK0GUfrbWCXx4qv-42" value="listerner.afterDisconnect&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState)是空函数&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1126" y="4940" width="299" height="30" as="geometry" />
+          <mxGeometry x="-1392.75" y="4950" width="299" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-2" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -1299,17 +1299,47 @@
         <mxCell id="UaWB042FTOmvel8zbl6t-36" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;一次最大8192字节，往socketChannel写,此处没有循环，&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;需要的循环是通过IOHub pool-thread0线程控制的，&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;发后如果sendQueue还有数据，再添加感兴的写：&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;getIoHub().addInterestWrite(sendKey&lt;span style=&quot;font-size: 11.2pt;&quot;&gt;)&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;（注意，如果NIONetworkLayer.write(ByteBuffer)）往sendQueue添加数据的时候，&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.2pt;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;也会在sendQueue事先没有数据时添加感兴趣的写&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1588" y="2440" width="480" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="RVXtcUScIwYpqA5LYpC9-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;channel = &lt;span style=&quot;color:#000000;&quot;&gt;protocol&lt;/span&gt;.connect(&lt;span style=&quot;color:#000000;&quot;&gt;jnlpSocket&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;headers&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;EngineJnlpConnectionStateListener(&lt;span style=&quot;color:#000000;&quot;&gt;endpoint&lt;/span&gt;.getPublicKey(), &lt;span style=&quot;color:#000000;&quot;&gt;headers&lt;/span&gt;)).get();&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RVXtcUScIwYpqA5LYpC9-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;channel = &lt;span style=&quot;color:#000000;&quot;&gt;protocol&lt;/span&gt;.connect(&lt;span style=&quot;color:#000000;&quot;&gt;jnlpSocket&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;headers&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;EngineJnlpConnectionStateListener(&lt;span style=&quot;color:#000000;&quot;&gt;endpoint&lt;/span&gt;.getPublicKey(), &lt;span style=&quot;color:#000000;&quot;&gt;headers&lt;/span&gt;)).get();&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1866.5" y="547.5" width="950" height="92.5" as="geometry" />
         </mxCell>
-        <mxCell id="RVXtcUScIwYpqA5LYpC9-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="RVXtcUScIwYpqA5LYpC9-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-870" y="600" as="sourcePoint" />
             <mxPoint x="260" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RVXtcUScIwYpqA5LYpC9-3" value="&lt;b&gt;connect函数返回SettableFuture&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Channel&lt;/span&gt;&amp;gt;&lt;/b&gt;&amp;nbsp;futureChannel&lt;b&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;对象，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;注意这个get(), 是执行SettableFuture&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Channel&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;gt; get(),&amp;nbsp;&lt;/span&gt;SettableFuture是参考FutureTask编写的，旨在等待applicationLayer层面的channel建立（当调用&lt;/b&gt;futureChannel&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.set(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;channel）时，这个等待结束&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;）（它和socketChannel不是一个意思，socketChannel是socket层面的channel; 而此处的Channel是在socketChannel建立连接，并且完成认证等交互并且收到指定的capabiliity定义后才生成Channel对象(应用层层面的Channel)）&lt;br&gt;&lt;/b&gt;；&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RVXtcUScIwYpqA5LYpC9-3" value="&lt;b&gt;connect函数返回SettableFuture&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Channel&lt;/span&gt;&amp;gt;&lt;/b&gt;&amp;nbsp;futureChannel&lt;b&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;对象，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;注意这个get(), 是执行SettableFuture&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Channel&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;gt; get(),&amp;nbsp;&lt;/span&gt;SettableFuture是参考FutureTask编写的，旨在等待applicationLayer层面的channel建立（当调用&lt;/b&gt;futureChannel&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.set(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;channel）时，这个等待结束&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;）（它和socketChannel不是一个意思，socketChannel是socket层面的channel; 而此处的Channel是在socketChannel建立连接，并且完成认证等交互并且收到指定的capabiliity定义后才生成Channel对象(应用层层面的Channel)）&lt;br&gt;&lt;/b&gt;；&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1900" y="610" width="810" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1UW1yn8sc5tRWC661rli-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1060" y="5170" as="sourcePoint" />
+            <mxPoint x="-1060" y="2120.769230769231" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1UW1yn8sc5tRWC661rli-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="153.23000000000002" y="5469.23" as="sourcePoint" />
+            <mxPoint x="153.23000000000002" y="2419.999230769231" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1UW1yn8sc5tRWC661rli-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2040" y="5649.23" as="sourcePoint" />
+            <mxPoint x="2040" y="2599.999230769231" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1UW1yn8sc5tRWC661rli-4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2950" y="5489.23" as="sourcePoint" />
+            <mxPoint x="2950" y="2439.999230769231" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1UW1yn8sc5tRWC661rli-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3770" y="5489.23" as="sourcePoint" />
+            <mxPoint x="3770" y="2439.999230769231" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
