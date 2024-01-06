@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-06T08:44:59.279Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="BVaRZUDLPlL7FPLj-AmN" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-06T09:08:10.740Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="0WhQqCcyduCg4-lPagxi" version="22.1.16" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -949,8 +949,8 @@
         </mxCell>
         <mxCell id="5ELjpxrQgCRXJpdXmUJf-1" value="" style="shape=link;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
-            <mxPoint x="-2050" y="3837" as="sourcePoint" />
-            <mxPoint x="4980.34" y="3850" as="targetPoint" />
+            <mxPoint x="-2050" y="3867" as="sourcePoint" />
+            <mxPoint x="4980.34" y="3880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5ELjpxrQgCRXJpdXmUJf-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener = JnlpProtocol4Handler#Handler&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -1394,6 +1394,24 @@
         </mxCell>
         <mxCell id="gOw527kXX3alILfFZIPG-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;border-color: var(--border-color); text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;jnlp4ConnectionState.fireBeforeChannel(&lt;span style=&quot;font-size: 9.8pt; text-align: center; color: rgb(0, 0, 0);&quot;&gt;ChannelBuilder&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; text-align: center;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1816" y="3710" width="416" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-14" value="listener=Engine#EngineJnlpConnectionStateListener&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;listerner.&amp;nbsp;beforeChannel&lt;span style=&quot;background-color: initial;&quot;&gt;(jnlp4ConnectionState&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1780" y="3830" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1665.5" y="3800" as="sourcePoint" />
+            <mxPoint x="-1665.5" y="3830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1486.75" y="3844.5" as="sourcePoint" />
+            <mxPoint x="-1416.75" y="3844.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-17" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;channdelBuilder.withJarCache(&lt;span style=&quot;color:#871094;&quot;&gt;jarCache&lt;/span&gt;);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1286.75" y="3830" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
