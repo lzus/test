@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-06T13:18:28.480Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="sATF8s6BdSSX9SjMD6Lu" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-06T13:23:32.967Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="lny8WQA5N82HU9uD1W6q" version="22.1.16" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1313,7 +1313,7 @@
         </mxCell>
         <mxCell id="1UW1yn8sc5tRWC661rli-1" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1060" y="5170" as="sourcePoint" />
+            <mxPoint x="-1060" y="5560" as="sourcePoint" />
             <mxPoint x="-1060" y="2120.769230769231" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -1451,6 +1451,24 @@
         </mxCell>
         <mxCell id="gOw527kXX3alILfFZIPG-26" value="用线程池运行，但是似乎并没做耗时的事？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1240" y="3920" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-27" value="" style="shape=link;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="-2082.25" y="5030" as="sourcePoint" />
+            <mxPoint x="4948.09" y="5043" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-28" value="Channel创建在ApplicationLayer层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1866.5" y="5130" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-29" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color: rgb(8, 8, 8);&quot;&gt;channel = new Channel(&lt;/span&gt;&lt;font color=&quot;#0033b3&quot;&gt;ChannelBuild&lt;/font&gt;&lt;font color=&quot;#080808&quot;&gt;,transport)&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1629.25" y="5130" width="362" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-30" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;transport = &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;ByteBufferCommandTransport(&lt;span style=&quot;color:#000000;&quot;&gt;remoteCapability&lt;/span&gt;);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1620" y="5050" width="462" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-31" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ChannelBuilder builder = &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;ChannelBuilder(stack().name(), &lt;span style=&quot;color:#871094;&quot;&gt;executorService&lt;/span&gt;)&lt;br&gt;        .withMode(&lt;span style=&quot;color:#000000;&quot;&gt;Channel&lt;/span&gt;.&lt;span style=&quot;color:#000000;&quot;&gt;Mode&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;BINARY&lt;/span&gt;);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1545" y="5090" width="442" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
