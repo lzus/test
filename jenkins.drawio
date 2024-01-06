@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-06T09:22:57.030Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="QNbbePwjqioZcn9POX76" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-06T09:25:57.201Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="taNFSmYdJWde87WV0khi" version="22.1.16" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1448,6 +1448,9 @@
             <mxPoint x="-1299.75" y="4030" as="sourcePoint" />
             <mxPoint x="-1299.75" y="4060" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-26" value="用线程池运行，但是似乎并没做耗时的事？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1240" y="3920" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
