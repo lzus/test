@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-06T13:40:47.476Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Im8S_pCJryH8myHMIwsD" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-06T14:15:59.211Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="DVIJ_FqOffdOZqX01gM1" version="22.1.16" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1481,6 +1481,9 @@
         </mxCell>
         <mxCell id="gOw527kXX3alILfFZIPG-34" value="创建channel时执行下面setup, 然后，channel中有transport，transport中有channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1410" y="5180" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-35" value="setup中其实可以说什么都没有做，就是设置属性" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1654" y="5470" width="321.75" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
