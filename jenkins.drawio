@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-05T02:48:38.626Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="21bG39jsVajn9Ps9vTau" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-06T08:44:59.279Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="BVaRZUDLPlL7FPLj-AmN" version="22.1.16" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3949" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -803,7 +803,7 @@
             <mxPoint x="-1260" y="2898.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0n1Nj1Sivc76l-1BmOpA-10" value="发送自身数据（84字节）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="0n1Nj1Sivc76l-1BmOpA-10" value="发送自身数据（84字节）,发送的是Capability对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1340" y="2660" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0n1Nj1Sivc76l-1BmOpA-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;rO0ABXNyABpodWRzb24ucmVtb3RpbmcuQ2FwYWJpbGl0eQAAAAAAAAABAgABSgAEbWFza3hwAAAAAAAAAf4&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -1311,35 +1311,89 @@
         <mxCell id="RVXtcUScIwYpqA5LYpC9-3" value="&lt;b&gt;connect函数返回SettableFuture&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Channel&lt;/span&gt;&amp;gt;&lt;/b&gt;&amp;nbsp;futureChannel&lt;b&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;对象，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;注意这个get(), 是执行SettableFuture&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Channel&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;gt; get(),&amp;nbsp;&lt;/span&gt;SettableFuture是参考FutureTask编写的，旨在等待applicationLayer层面的channel建立（当调用&lt;/b&gt;futureChannel&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.set(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;channel）时，这个等待结束&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;）（它和socketChannel不是一个意思，socketChannel是socket层面的channel; 而此处的Channel是在socketChannel建立连接，并且完成认证等交互并且收到指定的capabiliity定义后才生成Channel对象(应用层层面的Channel)）&lt;br&gt;&lt;/b&gt;；&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1900" y="610" width="810" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="1UW1yn8sc5tRWC661rli-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="1UW1yn8sc5tRWC661rli-1" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-1060" y="5170" as="sourcePoint" />
             <mxPoint x="-1060" y="2120.769230769231" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1UW1yn8sc5tRWC661rli-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="1UW1yn8sc5tRWC661rli-2" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="46.73000000000002" y="5469.23" as="sourcePoint" />
             <mxPoint x="46.73000000000002" y="2419.999230769231" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1UW1yn8sc5tRWC661rli-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="1UW1yn8sc5tRWC661rli-3" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2040" y="5649.23" as="sourcePoint" />
             <mxPoint x="2040" y="2599.999230769231" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1UW1yn8sc5tRWC661rli-4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="1UW1yn8sc5tRWC661rli-4" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="2950" y="5489.23" as="sourcePoint" />
             <mxPoint x="2950" y="2439.999230769231" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1UW1yn8sc5tRWC661rli-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="1UW1yn8sc5tRWC661rli-5" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="3770" y="5489.23" as="sourcePoint" />
             <mxPoint x="3770" y="2439.999230769231" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;onRead(&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1596.75" y="3480" width="297" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;onRecv(&lt;span style=&quot;color:#000000;&quot;&gt;ByteBuffer &lt;/span&gt;data)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1545" y="3380" width="225" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1446.75" y="3425" as="sourcePoint" />
+            <mxPoint x="-1446.75" y="3485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;transport = &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;ByteBufferCommandTransport(&lt;span style=&quot;color:#000000;&quot;&gt;remoteCapability&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1620" y="3610" width="500" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-5" value="如果收到capability对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1740" y="3390" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1446.75" y="3507" as="sourcePoint" />
+            <mxPoint x="-1446.75" y="3567" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener=JnlpProtocol4Handler#Handler&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;listener.decorate(channelBuilder&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1878.25" y="3640" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-8" value="&lt;pre style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;channel = channelBuilder.build(transport)&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1400.75" y="3650" width="367" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1448.75" y="3610" as="sourcePoint" />
+            <mxPoint x="-1448.75" y="3650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;lifecycle = &lt;span style=&quot;color:#000000;&quot;&gt;State&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;BEFORE_CHANNEL&lt;/span&gt;;&lt;span style=&quot;color:#008dde;font-style:italic;&quot;&gt;&lt;br&gt;&lt;/span&gt;jnlp4ConnectionState.fire(&lt;span style=&quot;color:#000000;&quot;&gt;JnlpConnectionStateListener&lt;/span&gt;::beforeChannel);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1804.75" y="3760" width="412" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1670" y="3680" as="sourcePoint" />
+            <mxPoint x="-1670" y="3710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1667.25" y="3740" as="sourcePoint" />
+            <mxPoint x="-1667.25" y="3770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gOw527kXX3alILfFZIPG-13" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;border-color: var(--border-color); text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;jnlp4ConnectionState.fireBeforeChannel(&lt;span style=&quot;font-size: 9.8pt; text-align: center; color: rgb(0, 0, 0);&quot;&gt;ChannelBuilder&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; text-align: center;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1816" y="3710" width="416" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
