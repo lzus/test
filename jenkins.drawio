@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-08T15:37:04.933Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5t5J_rchp1EEXkWsW9K5" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-08T15:45:04.084Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="yC1RWg09JqYZUzoN6-Ae" version="22.1.17" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3435" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3117" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1547,6 +1547,9 @@
         </mxCell>
         <mxCell id="rFoKOkCawBoXSFkqchcw-15" value="从receiveQueue中读取数据组装成Command" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1486.75" y="6090" width="166" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFoKOkCawBoXSFkqchcw-16" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;多线程情况下，NIO如何保证读和写数据不混杂？？？&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1166" y="2540" width="174" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
