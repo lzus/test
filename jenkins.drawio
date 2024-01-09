@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T14:45:56.667Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mk_g3WYjDFEiICuzxzXt" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T14:46:54.289Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="1OC9NjAFNk3_Tb2Nz8dD" version="22.1.17" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3096" dy="1508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1549,7 +1549,7 @@
           <mxGeometry x="-1486.75" y="6090" width="166" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rFoKOkCawBoXSFkqchcw-16" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;多线程情况下，NIO如何保证读和写数据不混杂？？？&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1166" y="2540" width="174" height="30" as="geometry" />
+          <mxGeometry x="877" y="2240" width="174" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rFoKOkCawBoXSFkqchcw-17" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -1561,7 +1561,10 @@
           <mxGeometry x="-2360" y="6250" width="220" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Ddqw8_YF25RHfNKx5CLz-1" value="一个连接一个NIONetworkLayer对象（关联一个channel对象），每个NIONetworkLayer对象的ready函数采用各自的reentrantLock对象控制读写，故不同线程在相同channel中是不存在同时读或者同时写的，保证了读和写的原子性" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1046" y="2285" width="154" height="85" as="geometry" />
+          <mxGeometry x="960" y="2285" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Ddqw8_YF25RHfNKx5CLz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.325;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rFoKOkCawBoXSFkqchcw-16" target="Ddqw8_YF25RHfNKx5CLz-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
