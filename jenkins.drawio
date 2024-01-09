@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T14:46:54.289Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="1OC9NjAFNk3_Tb2Nz8dD" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T14:48:10.589Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="VzTq_xPDY04NTMDJcE-Z" version="22.1.17" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
-    <mxGraphModel dx="3096" dy="1508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3485" dy="1723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1497,7 +1497,7 @@
         <mxCell id="gOw527kXX3alILfFZIPG-38" value="&lt;b&gt;关键的部分来了，处理收到的数据：&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1774" y="5630" width="204" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="rFoKOkCawBoXSFkqchcw-1" value="因为发送时，Command发送是采用synchronized控制同步发送的，一个线程发送Command没完成，其他线程发送需要竞争synchronized锁，保证了Command发送的原子性；&lt;br&gt;但是，收到数据如何保证顺序组装呢？1.如果是BIONetworkLayer，它只单一线程负责收，这个线程逐渐组装Command，当Command组装完成它才调用Command.execute()用线程池另一个线程去执行，保证了原子性；2.如果是NIONetworkLayer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="rFoKOkCawBoXSFkqchcw-1" value="因为发送时，Command发送是采用synchronized控制同步发送的，一个线程发送Command没完成，其他线程发送需要竞争synchronized锁，保证了Command发送的原子性；&lt;br&gt;但是，收到数据如何保证顺序组装呢？1.如果是BIONetworkLayer，它只单一线程负责收，这个线程逐渐组装Command，当Command组装完成它才调用Command.execute()用线程池另一个线程去执行，保证了原子性；2.如果是NIONetworkLayer，也是用锁，每个NIONetworkLayer对象都有一个读锁，和一个写锁" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1570" y="5606" width="491.5" height="68" as="geometry" />
         </mxCell>
         <mxCell id="rFoKOkCawBoXSFkqchcw-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
