@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T14:48:10.589Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="VzTq_xPDY04NTMDJcE-Z" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T15:25:28.248Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="hHO8simzrALXfQZU-w7p" version="22.1.17" type="github">
   <diagram name="第 1 页" id="0g3aWzYnLtcXMj87QazC">
     <mxGraphModel dx="3485" dy="1723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1565,6 +1565,18 @@
         </mxCell>
         <mxCell id="Ddqw8_YF25RHfNKx5CLz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.325;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rFoKOkCawBoXSFkqchcw-16" target="Ddqw8_YF25RHfNKx5CLz-1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ddqw8_YF25RHfNKx5CLz-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1495.53" y="6250" as="sourcePoint" />
+            <mxPoint x="-1495.53" y="6300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ddqw8_YF25RHfNKx5CLz-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;cmd.execute(Channel.&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1582.75" y="6311" width="190" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="Ddqw8_YF25RHfNKx5CLz-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Command是一个抽象类，它的execute方法是抽象方法，&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;需要有类继承它并实现execute方法&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1950" y="6300" width="342" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
