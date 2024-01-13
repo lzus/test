@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-13T06:52:04.730Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qL1X3QJr00aEmJuc6kl3" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-13T07:04:08.506Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="n7rR4x1AcPggvIndyume" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="954" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
             <mxPoint x="330" y="249.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-3" value="Node类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-3" value="SlaveNode类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="354" y="230" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="28NPE_NtasM6UTfwgU1X-4" value="读" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -25,8 +25,11 @@
             <mxPoint x="690" y="245" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-6" value="如果有连接，创建SlaveComputer对象，关联到channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="200" width="240" height="30" as="geometry" />
+        <mxCell id="28NPE_NtasM6UTfwgU1X-6" value="创建SlaveComputer对象，（内有channel属性但是是空值，因为还没连接）: slaveNode.createComputer()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="28NPE_NtasM6UTfwgU1X-7" value="启动的时候执行：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
