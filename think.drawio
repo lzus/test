@@ -1,9 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2024-01-13T06:49:57.738Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.18" etag="pC8XwumkrAYI67-0vNIp" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-13T06:52:04.730Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qL1X3QJr00aEmJuc6kl3" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="28NPE_NtasM6UTfwgU1X-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="210" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="28NPE_NtasM6UTfwgU1X-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="249.5" as="sourcePoint" />
+            <mxPoint x="330" y="249.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28NPE_NtasM6UTfwgU1X-3" value="Node类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="354" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="28NPE_NtasM6UTfwgU1X-4" value="读" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="28NPE_NtasM6UTfwgU1X-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="244.5" as="sourcePoint" />
+            <mxPoint x="690" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28NPE_NtasM6UTfwgU1X-6" value="如果有连接，创建SlaveComputer对象，关联到channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="240" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
