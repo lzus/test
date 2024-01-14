@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-14T14:19:21.534Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="VWE2hTjKIIdR9tjHIILK" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-14T14:23:26.873Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="U4KNL5lkBA7ukXR2C3s0" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1781" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -267,7 +267,7 @@
           <mxGeometry x="810" y="1480" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-39" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;b&gt;synchronized&lt;/b&gt; maybeRun(){&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;    if(condition){&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;        base.submit(&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Callable&lt;/span&gt;&amp;lt;&lt;span style=&quot;color:#000000;&quot;&gt;Void&lt;/span&gt;&amp;gt;() {&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;            inprogress.complete(&lt;span style=&quot;color:#871094;&quot;&gt;task&lt;/span&gt;.call())&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;border-color: var(--border-color); font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;            maybeRun()&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;        }&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;    }&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="680" y="1709" width="320" height="211" as="geometry" />
+          <mxGeometry x="680" y="1709" width="340" height="231" as="geometry" />
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-40" value="&lt;pre style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AtmostOneTaskExecutor&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="460" y="1728" width="170" height="26" as="geometry" />
@@ -279,10 +279,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-42" value="task.call()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="730" y="1940" width="60" height="30" as="geometry" />
+          <mxGeometry x="887" y="1940" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-43" value="maybeRun会运行完？因为有递归？好像是只运行一个，因为运行一个过，condition就是false了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="460" y="1760" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-44" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Map&amp;lt;&lt;span style=&quot;color:#000000;&quot;&gt;Executor&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;JobOffer&lt;/span&gt;&amp;gt; &lt;span style=&quot;color:#000000;&quot;&gt;parked &lt;/span&gt;= &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;HashMap&amp;lt;&amp;gt;()&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="692" y="2030" width="388" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-45" value="queue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="2040" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-46" value="task是queue中的一个" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1980" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-47" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;task是Queue中的一个匿名内部类：&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;new &lt;span style=&quot;color:#000000;&quot;&gt;Callable&lt;/span&gt;&amp;lt;&amp;gt;() {&lt;br&gt;    &lt;span style=&quot;color:#9e880d;&quot;&gt;@Override&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9e880d;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Void &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;call&lt;/span&gt;() &lt;span style=&quot;color:#0033b3;&quot;&gt;throws &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Exception &lt;/span&gt;{&lt;br&gt;        maintain();&lt;br&gt;        &lt;span style=&quot;color:#0033b3;&quot;&gt;return null&lt;/span&gt;;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;    &lt;span style=&quot;color:#9e880d;&quot;&gt;@Override&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9e880d;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;String &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;toString&lt;/span&gt;() {&lt;br&gt;        &lt;span style=&quot;color:#0033b3;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;Periodic Jenkins queue maintenance&quot;&lt;/span&gt;;&lt;br&gt;    }&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="1810" width="300" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-48" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="1960" as="sourcePoint" />
+            <mxPoint x="1120" y="1900" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
