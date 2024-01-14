@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-14T10:42:16.418Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="6bvywAVdQjyuVcmN-OPl" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-14T10:44:38.167Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ZFZly_vY35T_UWOtAVwZ" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1781" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -175,9 +175,6 @@
         <mxCell id="b8TVua-An-_wyIuso2jL-13" value="返回ScheduleResult" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="420" y="1590" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="b8TVua-An-_wyIuso2jL-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="1430" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ScheduleResult &lt;span style=&quot;color:#00627a;&quot;&gt;schedule2&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;Task &lt;/span&gt;p, &lt;span style=&quot;color:#0033b3;&quot;&gt;int &lt;/span&gt;quietPeriod, &lt;span style=&quot;color:#000000;&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span style=&quot;color:#000000;&quot;&gt;Action&lt;/span&gt;&amp;gt; actions)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="1090" width="540" height="60" as="geometry" />
         </mxCell>
@@ -236,6 +233,24 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="420" y="1260" as="sourcePoint" />
             <mxPoint x="420" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-32" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;return &lt;span style=&quot;color:#000000;&quot;&gt;ScheduleResult&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;created&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;added&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="1215" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-33" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1129.5" y="1165" as="sourcePoint" />
+            <mxPoint x="1129.5" y="1215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1300" as="sourcePoint" />
+            <mxPoint x="610" y="1540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1170" y="1500" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
