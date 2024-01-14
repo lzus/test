@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-14T10:47:27.728Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="48sVWgxsJfgqLzIFw4bo" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-14T14:07:32.104Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="2Lo4YRUcfZykdn_-MVpe" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1781" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -265,6 +265,21 @@
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-38" value="不相交" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="810" y="1480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-39" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;b&gt;synchronized&lt;/b&gt; maybeRun(){&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;base.submit(&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Callable&lt;/span&gt;&amp;lt;&lt;span style=&quot;color:#000000;&quot;&gt;Void&lt;/span&gt;&amp;gt;() {&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;inprogress.complete(&lt;span style=&quot;color:#871094;&quot;&gt;task&lt;/span&gt;.call())&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;border-color: var(--border-color); font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;maybeRun()&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="1709" width="385" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-40" value="&lt;pre style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AtmostOneTaskExecutor&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1728" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-41" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="827" y="1890" as="sourcePoint" />
+            <mxPoint x="827" y="1940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-42" value="task.call()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1910" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
