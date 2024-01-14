@@ -1,128 +1,158 @@
-<mxfile host="app.diagrams.net" modified="2024-01-13T15:02:39.539Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="2zAk4QXz1e4m_YVk3rfi" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-14T07:52:17.869Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qSG9Jk9eJwkCR5kLVju0" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="954" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="28NPE_NtasM6UTfwgU1X-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="170" y="210" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="260" y="249.5" as="sourcePoint" />
             <mxPoint x="330" y="249.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-3" value="SlaveNode类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-3" value="SlaveNode类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="354" y="230" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-4" value="读" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-4" value="读" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="260" y="200" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="244.5" as="sourcePoint" />
             <mxPoint x="690" y="245" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-6" value="创建SlaveComputer对象，（内有channel属性但是是空值，因为还没连接）: slaveNode.createComputer()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-6" value="创建SlaveComputer对象，（内有channel属性但是是空值，因为还没连接）: slaveNode.createComputer()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="440" y="200" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-7" value="启动的时候执行：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-7" value="启动的时候执行：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="200" y="140" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-9" value="在全局单例上保存node和computers的对应关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-9" value="在全局单例上保存node和computers的对应关系" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="720" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="370" as="sourcePoint" />
             <mxPoint x="200" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-12" value="连接进来，创建channel对象" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-12" value="连接进来，创建channel对象" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="330" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-13" value="根据node name得到computer对象" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-13" value="根据node name得到computer对象" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="330" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-14" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="380" y="359.5" as="sourcePoint" />
             <mxPoint x="440" y="359.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-15" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="600" y="360" as="sourcePoint" />
             <mxPoint x="660" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-16" value="把channel设置到computer中，此时代表连接已经成功（根据是否有channel）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-16" value="把channel设置到computer中，此时代表连接已经成功（根据是否有channel）" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="330" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-18" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="350" y="520" as="sourcePoint" />
             <mxPoint x="420" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-19" value="channel.call(callable)会生成reqeest对象，调用requeust.call(channel)让channel.send(request)发送这个request, 并把这个request放到channel的属性Map&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Request&amp;gt;中， key为id&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-19" value="channel.call(callable)会生成reqeest对象，调用requeust.call(channel)让channel.send(request)发送这个request, 并把这个request放到channel的属性Map&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Request&amp;gt;中， key为id&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="490" width="280" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-20" value="new一个request, 里面有id,唯一标识这个request" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-20" value="new一个request, 里面有id,唯一标识这个request" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-22" value="远端收到requuest执行" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-22" value="远端收到requuest执行" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1020" y="490" width="220" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-23" value="request" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-23" value="request" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="827" y="480" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-24" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="810" y="530" as="sourcePoint" />
             <mxPoint x="930" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-25" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="900" y="630" as="sourcePoint" />
             <mxPoint x="840" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-26" value="response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-26" value="response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="827" y="630" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-27" value="执行完发送response, 这个response带着request的id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-27" value="执行完发送response, 这个response带着request的id" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1030" y="615" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-28" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1129.5" y="564.5" as="sourcePoint" />
             <mxPoint x="1129.5" y="604.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-29" value="由response的id从Map&amp;lt;&lt;span style=&quot;border-color: var(--border-color); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Request&amp;gt;拿到request&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-29" value="由response的id从Map&amp;lt;&lt;span style=&quot;border-color: var(--border-color); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Request&amp;gt;拿到request&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="615" width="250" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-30" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="644.5" as="sourcePoint" />
             <mxPoint x="360" y="644.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-31" value="执行req&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.onCompleted(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font color=&quot;#0033b3&quot;&gt;response&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-31" value="执行req&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.onCompleted(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font color=&quot;#0033b3&quot;&gt;response&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="615" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-32" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-32" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="340" y="610" as="sourcePoint" />
             <mxPoint x="450" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28NPE_NtasM6UTfwgU1X-34" value="这样request对象的调用就有返回了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="28NPE_NtasM6UTfwgU1X-34" value="这样request对象的调用就有返回了" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="570" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-1" value="RPC远端过程调用：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="520" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-2" value="browser点击运行：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="850" as="sourcePoint" />
+            <mxPoint x="230" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;doBuild(&lt;span style=&quot;color:#000000;&quot;&gt;StaplerRequest &lt;/span&gt;req, &lt;span style=&quot;color:#000000;&quot;&gt;StaplerResponse &lt;/span&gt;rsp, &lt;span style=&quot;color:#9e880d;&quot;&gt;@QueryParameter &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;TimeDuration &lt;/span&gt;delay)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="825" width="660" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="890" as="sourcePoint" />
+            <mxPoint x="520" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Queue.&lt;span style=&quot;color:#000000;&quot;&gt;Item item &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;Jenkins&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;get&lt;/span&gt;().getQueue().schedule2(asJob(), &lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;               delay.getTimeInSeconds(), &lt;span style=&quot;font-style:italic;&quot;&gt;getBuildCause&lt;/span&gt;(asJob(), req)).getItem();&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="950" width="640" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-7" value="有一个Queue单例，queue单例中有一个AtmostOneTaskExecutor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="920" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-8" value="&lt;b&gt;一个jenkins单例，包含一个queue单例&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="780" width="280" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
