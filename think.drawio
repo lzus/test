@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-14T07:52:17.869Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qSG9Jk9eJwkCR5kLVju0" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-14T10:42:16.418Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="6bvywAVdQjyuVcmN-OPl" version="22.1.18" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
-    <mxGraphModel dx="954" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1781" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -148,11 +148,95 @@
         <mxCell id="b8TVua-An-_wyIuso2jL-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Queue.&lt;span style=&quot;color:#000000;&quot;&gt;Item item &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;Jenkins&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;get&lt;/span&gt;().getQueue().schedule2(asJob(), &lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;               delay.getTimeInSeconds(), &lt;span style=&quot;font-style:italic;&quot;&gt;getBuildCause&lt;/span&gt;(asJob(), req)).getItem();&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="950" width="640" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="b8TVua-An-_wyIuso2jL-7" value="有一个Queue单例，queue单例中有一个AtmostOneTaskExecutor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="b8TVua-An-_wyIuso2jL-7" value="有一个Queue单例，queue单例中有一个AtmostOneTaskExecutor单例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="270" y="920" width="210" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-8" value="&lt;b&gt;一个jenkins单例，包含一个queue单例&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="260" y="780" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="1020" as="sourcePoint" />
+            <mxPoint x="480" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;的AtmostOneTaskExecutor.submit() 检查queue并负责运行queue中任何可运行的， 这个方法是synchronized的&lt;br&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1360" width="760" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-11" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1060" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="1539.5" as="sourcePoint" />
+            <mxPoint x="10" y="1539.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-13" value="返回ScheduleResult" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1590" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ScheduleResult &lt;span style=&quot;color:#00627a;&quot;&gt;schedule2&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;Task &lt;/span&gt;p, &lt;span style=&quot;color:#0033b3;&quot;&gt;int &lt;/span&gt;quietPeriod, &lt;span style=&quot;color:#000000;&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span style=&quot;color:#000000;&quot;&gt;Action&lt;/span&gt;&amp;gt; actions)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1090" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="1160" as="sourcePoint" />
+            <mxPoint x="480" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-18" value="ScheduleResult" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-19" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Queue.&lt;span style=&quot;color:#000000;&quot;&gt;Item item=&lt;/span&gt;&lt;/pre&gt;ScheduleResult.gettem()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="194" y="1510" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="1539.5" as="sourcePoint" />
+            <mxPoint x="370" y="1539.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-21" value="返回浏览器一个简单的response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="1480" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-22" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;WaitingItem added = &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;WaitingItem(&lt;span style=&quot;color:#000000;&quot;&gt;due&lt;/span&gt;, p, actions);&lt;br&gt;&lt;span style=&quot;color:#000000;&quot;&gt;added&lt;/span&gt;.enter(&lt;span style=&quot;color:#0033b3;&quot;&gt;queue&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1210" width="560" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-23" value="Queue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="134" y="1100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-24" value="Queue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1225" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-26" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;quue.waitingList.add(&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1290" width="560" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-27" value="&lt;pre style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;WaitingItem&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-28" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;scheduleMaintenance()&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="684" y="1215" width="266" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="1160" as="sourcePoint" />
+            <mxPoint x="740" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="779.5" y="1285" as="sourcePoint" />
+            <mxPoint x="779.5" y="1335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8TVua-An-_wyIuso2jL-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="1260" as="sourcePoint" />
+            <mxPoint x="420" y="1290" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
