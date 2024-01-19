@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-19T14:44:58.365Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="i2eAvSE1UZjLJusI2-ZZ" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-19T14:47:42.079Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="bh3bVlLnF0GSuxMEO-LB" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1372" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -307,6 +307,9 @@
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-2" value="在afterChannel中，会调用如下ping,&amp;nbsp; 并且这个ping是双向的" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="414" y="2510" width="346" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-4" value="在setChannel中， 还会远程调用：&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;String slaveVersion = channel.call(&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;SlaveVersion());&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;String communicationProtocol = channel.call(&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;CommunicationProtocol());&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="2830" width="460" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
