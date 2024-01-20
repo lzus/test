@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T10:18:43.520Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="8CFoNCk9tDzeLaDsf9w3" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T10:21:40.192Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="A6XwE1ERBquGAzVh-eEM" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1949" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -525,6 +525,15 @@
             <mxPoint x="3210" y="3820" as="sourcePoint" />
             <mxPoint x="3240" y="3990" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-84" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3020" y="3870" as="sourcePoint" />
+            <mxPoint x="3000" y="4090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-85" value="发送返回结果， 注意这send函数是synchronized的" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="4100" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
