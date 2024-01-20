@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T10:21:40.192Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="A6XwE1ERBquGAzVh-eEM" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T10:24:27.545Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="EdbHCsymQxWJmkIr_xxf" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
-    <mxGraphModel dx="1949" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2295" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -534,6 +534,18 @@
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-85" value="发送返回结果， 注意这send函数是synchronized的" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2960" y="4100" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-86" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1800" y="4400" as="sourcePoint" />
+            <mxPoint x="2000" y="4400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-87" value="远端收到response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="4340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-88" value="&lt;pre style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;rsp = &lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;Response&amp;lt;&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 126, 138);&quot;&gt;RSP&lt;/span&gt;, &lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 126, 138);&quot;&gt;EXC&lt;/span&gt;&amp;gt;(&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0);&quot;&gt;Request&lt;/span&gt;.&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 51, 179);&quot;&gt;this&lt;/span&gt;, &lt;span style=&quot;border-color: var(--border-color); color: rgb(135, 16, 148);&quot;&gt;id&lt;/span&gt;, calcLastIoId(), &lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0);&quot;&gt;r&lt;/span&gt;);&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;        &lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;        &lt;span style=&quot;border-color: var(--border-color); color: rgb(133, 22, 145);&quot;&gt;channel&lt;/span&gt;.send(&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0);&quot;&gt;rsp&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1191" y="4270" width="539" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
