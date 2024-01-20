@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-19T14:52:54.499Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="4t15ry9JqXfH6nWz-kuo" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T07:14:58.619Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="y_3yjfmSMnv1TZv7PQ2P" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
-    <mxGraphModel dx="1372" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2099" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -289,9 +289,6 @@
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-45" value="queue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="530" y="2040" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b8TVua-An-_wyIuso2jL-46" value="task是queue中的一个" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="650" y="1980" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b8TVua-An-_wyIuso2jL-47" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;task是Queue中的一个匿名内部类：&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;new &lt;span style=&quot;color:#000000;&quot;&gt;Callable&lt;/span&gt;&amp;lt;&amp;gt;() {&lt;br&gt;    &lt;span style=&quot;color:#9e880d;&quot;&gt;@Override&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9e880d;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Void &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;call&lt;/span&gt;() &lt;span style=&quot;color:#0033b3;&quot;&gt;throws &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Exception &lt;/span&gt;{&lt;br&gt;        maintain();&lt;br&gt;        &lt;span style=&quot;color:#0033b3;&quot;&gt;return null&lt;/span&gt;;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;    &lt;span style=&quot;color:#9e880d;&quot;&gt;@Override&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9e880d;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;String &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;toString&lt;/span&gt;() {&lt;br&gt;        &lt;span style=&quot;color:#0033b3;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;Periodic Jenkins queue maintenance&quot;&lt;/span&gt;;&lt;br&gt;    }&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1140" y="1810" width="300" height="250" as="geometry" />
