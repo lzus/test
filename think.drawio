@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T08:40:37.346Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="S5c1unMpcX9_H5ywB-sM" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T08:55:53.683Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="7eqo2KQfyGdpSDlxtheO" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1534" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -395,17 +395,29 @@
         <mxCell id="06alQv1NjXv8y6Qvns7L-39" value="+ method :&amp;nbsp;execute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-35">
           <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-42" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="06alQv1NjXv8y6Qvns7L-43" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;future = channel.&lt;span style=&quot;color:#871094;&quot;&gt;executor&lt;/span&gt;.submit(&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Runnable&lt;/span&gt;() {&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;.....&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="3440" width="465" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-45" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="3460" as="sourcePoint" />
-            <mxPoint x="490" y="3460" as="targetPoint" />
+            <mxPoint x="665" y="3450" as="sourcePoint" />
+            <mxPoint x="815" y="3450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-43" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;future = channel.&lt;span style=&quot;color:#871094;&quot;&gt;executor&lt;/span&gt;.submit(&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Runnable&lt;/span&gt;() {&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;.....&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="510" y="3400" width="465" height="88" as="geometry" />
+        <mxCell id="06alQv1NjXv8y6Qvns7L-47" value="channel.call(callable)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="3405" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-44" value="把真正的任务对象序列化放到request属性中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="530" y="3540" width="130" height="30" as="geometry" />
+        <mxCell id="06alQv1NjXv8y6Qvns7L-48" value="callable是一个包含call方法的可序列化的对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-335" y="3350" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-49" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-160" y="3440" as="sourcePoint" />
+            <mxPoint x="360" y="3550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-51" value="生成一个UserRequest对象，并把callable对象序列化，&lt;br&gt;保存到UserRequest对象的request属性中，序列化后callable是一个字节数组" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="3570" width="250" height="64" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
