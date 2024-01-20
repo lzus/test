@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T10:31:10.481Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="chJiMHScNOIqipYuoryK" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T10:36:53.907Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="zD8qXFb4QKtLznzRfE0M" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
-    <mxGraphModel dx="2099" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1508" dy="376" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -548,16 +548,16 @@
           <mxGeometry x="1221" y="4340" width="549" height="110" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-89" value="Response" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="3350" width="140" height="104" as="geometry" />
+          <mxGeometry x="670" y="3350" width="150" height="104" as="geometry" />
         </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-90" value="+ method: perform(ch)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-89">
-          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        <mxCell id="06alQv1NjXv8y6Qvns7L-90" value="+ field: UserReqeuest" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-89">
+          <mxGeometry y="26" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-91" value="+ method:call(channel)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-89">
-          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        <mxCell id="06alQv1NjXv8y6Qvns7L-91" value="+ field: NormalResponse" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-89">
+          <mxGeometry y="52" width="150" height="26" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-92" value="+ method :&amp;nbsp;execute(ch)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-89">
-          <mxGeometry y="78" width="140" height="26" as="geometry" />
+          <mxGeometry y="78" width="150" height="26" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="06alQv1NjXv8y6Qvns7L-89" target="06alQv1NjXv8y6Qvns7L-35">
           <mxGeometry relative="1" as="geometry">
