@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T08:56:55.709Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jDEw0BwDY3GMBqGm01LC" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T09:05:00.517Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="z3xcx6bPNUZzV9te9U3o" version="22.1.21" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1534" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -361,7 +361,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-25" value="UserRequest" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="3510" width="140" height="52" as="geometry" />
+          <mxGeometry x="420" y="3350" width="140" height="52" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-26" value="+&amp;nbsp;byte&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;[] &lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;request&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-25">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -372,7 +372,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-30" value="Request" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="3370" width="140" height="104" as="geometry" />
+          <mxGeometry x="214" y="3320" width="140" height="104" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-31" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-30">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -384,7 +384,7 @@
           <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-35" value="Command" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="3240" width="140" height="104" as="geometry" />
+          <mxGeometry x="-5" y="3310" width="140" height="104" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-36" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="06alQv1NjXv8y6Qvns7L-35">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -404,26 +404,55 @@
             <mxPoint x="815" y="3450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.642;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="06alQv1NjXv8y6Qvns7L-47" target="06alQv1NjXv8y6Qvns7L-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="3669.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-47" value="channel.call(callable)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-320" y="3405" width="120" height="60" as="geometry" />
+          <mxGeometry x="-60" y="3560" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-48" value="callable是一个包含call()方法的可序列化的对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-335" y="3350" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-49" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-160" y="3440" as="sourcePoint" />
-            <mxPoint x="360" y="3550" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry x="-110" y="3469" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="06alQv1NjXv8y6Qvns7L-51" value="生成一个UserRequest对象，并把callable对象序列化，&lt;br&gt;保存到UserRequest对象的request属性中，序列化后callable是一个字节数组" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="180" y="3570" width="250" height="64" as="geometry" />
+          <mxGeometry x="85" y="3469" width="250" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="06alQv1NjXv8y6Qvns7L-52" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="06alQv1NjXv8y6Qvns7L-53" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="06alQv1NjXv8y6Qvns7L-47" target="06alQv1NjXv8y6Qvns7L-54">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-166" y="3460" as="sourcePoint" />
-            <mxPoint x="380" y="3710" as="targetPoint" />
+            <mxPoint x="90" y="3560" as="sourcePoint" />
+            <mxPoint x="370" y="3530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="3560" />
+            </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-54" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;request = &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;UserRequest(&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;, callable)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="3528" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-55" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;UserRequest.&lt;span style=&quot;color:#000000;&quot;&gt;ResponseToUserRequest&lt;/span&gt;&amp;lt;&lt;span style=&quot;color:#007e8a;&quot;&gt;V&lt;/span&gt;, &lt;span style=&quot;color:#007e8a;&quot;&gt;T&lt;/span&gt;&amp;gt; &lt;span style=&quot;color:#000000;&quot;&gt;r &lt;/span&gt;= &lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;UserRequest&lt;/span&gt;.&lt;span style=&quot;color:#000000;&quot;&gt;ResponseToUserRequest&lt;/span&gt;)&lt;span style=&quot;color:#000000;&quot;&gt;request&lt;/span&gt;.call(&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="3610" width="466" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-57" value="接着调用UserRequest的call方法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="3610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-58" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="3690" as="sourcePoint" />
+            <mxPoint x="560" y="3740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-59" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;synchronized(channel) {&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;synchronized&lt;/span&gt;(&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;) {&lt;br&gt;        &lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;response &lt;/span&gt;= &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;;&lt;br&gt;        channel.&lt;span style=&quot;color:#871094;&quot;&gt;pendingCalls&lt;/span&gt;.put(&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;id&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;);&lt;br&gt;        &lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;startTime &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;System&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;nanoTime&lt;/span&gt;();&lt;br&gt;        channel.send(&lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;);&lt;br&gt;    }&lt;br&gt;}&lt;/pre&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="382" y="3750" width="390" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-60" value="在Channel类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="3543" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-61" value="在Channel类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="812" y="3625" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06alQv1NjXv8y6Qvns7L-62" value="在Request(UserRequest)类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="827" y="3780" width="143" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
