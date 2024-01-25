@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-25T15:34:42.106Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Pe9b7PjU5NKkJWoKNf98" version="23.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-25T15:35:23.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qw0SlP6P2ns3dSAk6jUk" version="23.0.0" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1781" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -616,6 +616,15 @@
             <mxPoint x="770" y="5010" as="sourcePoint" />
             <mxPoint x="861" y="5129" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="4FKUqLPQdiaB-Llk_L02-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="711.5" y="5191" as="sourcePoint" />
+            <mxPoint x="711.5" y="5261" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FKUqLPQdiaB-Llk_L02-8" value="问题：scan哪里呢？？？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="5280" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
