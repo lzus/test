@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-25T15:35:23.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="qw0SlP6P2ns3dSAk6jUk" version="23.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-25T15:37:35.151Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="CLn6qLcJPa3h5-icjA5J" version="23.0.0" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1781" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -608,7 +608,7 @@
         <mxCell id="4FKUqLPQdiaB-Llk_L02-4" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;private static &lt;span style=&quot;color:#000000;&quot;&gt;Integer &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;writeToTar&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;File &lt;/span&gt;baseDir, &lt;span style=&quot;color:#000000;&quot;&gt;DirScanner &lt;/span&gt;scanner, &lt;span style=&quot;color:#000000;&quot;&gt;OutputStream &lt;/span&gt;out) &lt;span style=&quot;color:#0033b3;&quot;&gt;throws &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;IOException &lt;/span&gt;{&lt;br&gt;    &lt;span style=&quot;color:#000000;&quot;&gt;Archiver tw &lt;/span&gt;= &lt;span style=&quot;color:#000000;&quot;&gt;ArchiverFactory&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;TAR&lt;/span&gt;.create(out);&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;try &lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;tw&lt;/span&gt;) {&lt;br&gt;        scanner.scan(baseDir, &lt;span style=&quot;color:#000000;&quot;&gt;tw&lt;/span&gt;);&lt;br&gt;    }&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;tw&lt;/span&gt;.countEntries();&lt;br&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="515" y="4930" width="835" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="4FKUqLPQdiaB-Llk_L02-5" value="scanner负责扫描文件和过滤文件，然后会把找到并过滤后的文件交给Archiver,&amp;nbsp; 即scan的过程中会调用archiver.visit(file, relativepath)把文件交给archiverr处理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="4FKUqLPQdiaB-Llk_L02-5" value="scanner负责扫描文件夹baseDir中的文件和过滤文件，然后会把找到并过滤后的文件交给Archiver,&amp;nbsp; 即scan的过程中会调用archiver.visit(file, relativepath)把文件交给archiverr处理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="445" y="5110" width="620" height="80" as="geometry" />
         </mxCell>
         <mxCell id="4FKUqLPQdiaB-Llk_L02-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
@@ -616,15 +616,6 @@
             <mxPoint x="770" y="5010" as="sourcePoint" />
             <mxPoint x="861" y="5129" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="4FKUqLPQdiaB-Llk_L02-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="711.5" y="5191" as="sourcePoint" />
-            <mxPoint x="711.5" y="5261" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4FKUqLPQdiaB-Llk_L02-8" value="问题：scan哪里呢？？？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="600" y="5280" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
