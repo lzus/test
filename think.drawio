@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-26T03:01:42.581Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="t271djR2-0cDCEgRNUXz" version="23.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-26T03:48:59.805Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="YYIJukwu6WUMEDjp8AEi" version="23.0.0" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="1831" dy="554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -622,6 +622,9 @@
         </mxCell>
         <mxCell id="977pMD2Gh5TU5tIR1Yxq-3" value="当jenkins前端传送文件参数的时候，图片中的file对象接收到此文件对象DiskFileItem;&lt;br&gt;生成一个远端FilePath对象locationFilePath, 指向远端/Users/lizs/jenkins2/workspace/test2/woshishui.png，调用locationFilePath&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;.copyFrom(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;file&lt;/span&gt;)把DiskFileItem拷贝到远端；&lt;br&gt;生成本地FilePath对象&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;FilePath(getLocationUnderBuild(build))&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;（channel为空）， 调用&lt;/span&gt;locationFilePath.copyTo(&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#871094&quot;&gt;&lt;span style=&quot;font-size: 13.0667px;&quot;&gt;。。&lt;/span&gt;&lt;/font&gt;)把远端文件拷贝到本地" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-770" y="5270" width="1000" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="977pMD2Gh5TU5tIR1Yxq-4" value="&lt;b&gt;无论是本地向远端拷贝（拷贝操作在本地执行）， 还是远端向本地拷贝（拷贝操作在远端执行）， 都需要在执行拷贝操作的地方有一个对端的RemoteOutputStream&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-730" y="5400" width="830" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
