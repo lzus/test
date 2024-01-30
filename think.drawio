@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-30T06:52:01.988Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="syNiXpr3ihjSqdzxUzYF" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-30T06:52:49.964Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="CW83GrMBUXP7DPH4qxr8" version="23.0.2" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4262" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -870,7 +870,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5olTsx-yuNBHqxYUNDgg-3" value="Queue$JobOffer类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="2750" width="150" height="30" as="geometry" />
+          <mxGeometry x="1260" y="2750" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5olTsx-yuNBHqxYUNDgg-4" value="Executor类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1650" y="2750" width="120" height="30" as="geometry" />
@@ -880,6 +880,12 @@
         </mxCell>
         <mxCell id="5olTsx-yuNBHqxYUNDgg-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;MappingWorksheet$Mapping类中&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="548.75" y="2820" width="228.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5olTsx-yuNBHqxYUNDgg-7" value="Queue类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="2505" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5olTsx-yuNBHqxYUNDgg-8" value="Queue类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="2665" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
