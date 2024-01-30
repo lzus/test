@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-30T06:52:49.964Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="CW83GrMBUXP7DPH4qxr8" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-30T06:59:15.996Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="fhK4wEwMHOx0xbxVvePp" version="23.0.2" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4262" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -777,7 +777,7 @@
           <mxGeometry x="-330" y="1660" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="JHt8SxivUsdyf2o_aPZH-9" value="找出所有的computers中的执行器（Executor），且没有正在执行任务（parking），不管node有没有在线，只看executor是否是parking" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="450" y="2210" width="315" height="30" as="geometry" />
+          <mxGeometry x="450" y="2200" width="315" height="30" as="geometry" />
         </mxCell>
         <mxCell id="JHt8SxivUsdyf2o_aPZH-10" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;List&amp;lt;&lt;span style=&quot;color:#000000;&quot;&gt;JobOffer&lt;/span&gt;&amp;gt; &lt;span style=&quot;color:#000000;&quot;&gt;candidates &lt;/span&gt;= &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;ArrayList&amp;lt;&amp;gt;(&lt;span style=&quot;color:#000000;&quot;&gt;parked&lt;/span&gt;.size());&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;candidates.add(&lt;span style=&quot;color:#000000;&quot;&gt;j&lt;/span&gt;);&lt;/pre&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="880" y="2280" width="518" height="70" as="geometry" />
@@ -861,11 +861,11 @@
           <mxGeometry x="790" y="3010" width="300" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5olTsx-yuNBHqxYUNDgg-1" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;protected void &lt;span style=&quot;color:#00627a;&quot;&gt;set&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;WorkUnit &lt;/span&gt;p) {&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;assert this&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;workUnit &lt;/span&gt;== &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;;&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;workUnit &lt;/span&gt;= p;&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;assert &lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;executor&lt;/span&gt;.isParking();&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;executor&lt;/span&gt;.start(&lt;span style=&quot;color:#871094;&quot;&gt;workUnit&lt;/span&gt;);&lt;span style=&quot;color:#8c8c8c;font-style:italic;&quot;&gt;&lt;br&gt;&lt;/span&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="2790" width="313" height="150" as="geometry" />
+          <mxGeometry x="1230" y="2795" width="313" height="150" as="geometry" />
         </mxCell>
         <mxCell id="5olTsx-yuNBHqxYUNDgg-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1520" y="2860" as="sourcePoint" />
+            <mxPoint x="1580" y="2860" as="sourcePoint" />
             <mxPoint x="1630" y="2860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -886,6 +886,24 @@
         </mxCell>
         <mxCell id="5olTsx-yuNBHqxYUNDgg-8" value="Queue类中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="630" y="2665" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5olTsx-yuNBHqxYUNDgg-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="2879.5" as="sourcePoint" />
+            <mxPoint x="1210" y="2879.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5olTsx-yuNBHqxYUNDgg-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1210" y="2510" as="sourcePoint" />
+            <mxPoint x="1260" y="2510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5olTsx-yuNBHqxYUNDgg-11" value="candidates 中元素是 Queue$JobOffer类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1266.5" y="2490" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5olTsx-yuNBHqxYUNDgg-12" value="每一个JobOffer生成时执行new &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;JobOffer(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;executor&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)， 即一个executor关联着一个JobOffer对象&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="342.5" y="2240" width="359.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
