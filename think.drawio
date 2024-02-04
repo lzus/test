@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T15:37:09.395Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="WDXCKZPBwi4J5o5TcYHz" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T15:39:23.121Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="ZmvsGaj3WVXzGu1J-oBF" version="23.0.2" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4262" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1049,8 +1049,11 @@
         <mxCell id="7Z65fcuOvC9u-u0fuQtn-20" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;ExportTable类&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="5790" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7Z65fcuOvC9u-u0fuQtn-21" value="说明UserRequest&lt;span style=&quot;background-color: initial;&quot;&gt;序列化完成后就停止export到ExportList里&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-21" value="说明UserRequest&lt;span style=&quot;background-color: initial;&quot;&gt;序列化完成后就停止export到ExportList里, export函数是synchronized的&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-220" y="5870" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-22" value="一个channel对应一个exporttable" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="264" y="5350" width="206" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
