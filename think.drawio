@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T14:43:22.791Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="TQbMJOtXiE7eOIguXUt9" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T15:37:09.395Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="WDXCKZPBwi4J5o5TcYHz" version="23.0.2" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4262" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1031,8 +1031,26 @@
             <mxPoint x="-110" y="5770" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7Z65fcuOvC9u-u0fuQtn-16" value="说明一个UserRequest关联一个新的ExportList对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-16" value="说明一个UserRequest关联一个new ExportList对象,当序列化时调用export函数就会添加到这个LIST里" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-270" y="5780" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-640" y="5720" as="sourcePoint" />
+            <mxPoint x="140" y="5860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-470" y="5860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-19" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;void &lt;span style=&quot;color:#00627a;&quot;&gt;stopRecording&lt;/span&gt;() {&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;lists&lt;/span&gt;.set(&lt;span style=&quot;color:#871094;&quot;&gt;old&lt;/span&gt;);&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="5830" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-20" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;ExportTable类&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="5790" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-21" value="说明UserRequest&lt;span style=&quot;background-color: initial;&quot;&gt;序列化完成后就停止export到ExportList里&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="5870" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
