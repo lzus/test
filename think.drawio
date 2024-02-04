@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T11:52:50.367Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="i1NW7opPpmzlseF22ibv" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T14:43:22.791Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="TQbMJOtXiE7eOIguXUt9" version="23.0.2" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4262" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -905,71 +905,134 @@
         <mxCell id="5olTsx-yuNBHqxYUNDgg-12" value="每一个JobOffer生成时执行new &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;JobOffer(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;executor&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;)， 即一个executor关联着一个JobOffer对象&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="342.5" y="2240" width="359.5" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-1" value="" style="endArrow=none;html=1;strokeWidth=3;rounded=1;curved=0;endSize=12;startSize=12;dashed=1;" edge="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-1" value="" style="endArrow=none;html=1;strokeWidth=3;rounded=1;curved=0;endSize=12;startSize=12;dashed=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-1006" y="5290" as="sourcePoint" />
             <mxPoint x="1774" y="5290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;UserRequest&lt;/pre&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;UserRequest&lt;/pre&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-769" y="5420" width="140" height="104" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-3" value="+&amp;nbsp;ExportList &lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;exports&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9PFKNPjo5pRAxwCTYQ8B-2">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-3" value="+&amp;nbsp;ExportList &lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;exports&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="9PFKNPjo5pRAxwCTYQ8B-2" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-4" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9PFKNPjo5pRAxwCTYQ8B-2">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-4" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="9PFKNPjo5pRAxwCTYQ8B-2" vertex="1">
           <mxGeometry y="52" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-5" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9PFKNPjo5pRAxwCTYQ8B-2">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-5" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="9PFKNPjo5pRAxwCTYQ8B-2" vertex="1">
           <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-710" y="5530" as="sourcePoint" />
             <mxPoint x="-710" y="5600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;exports = channel.startExportRecording();&lt;br&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;try &lt;/span&gt;{&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;request &lt;/span&gt;= serialize(callable,channel);&lt;br&gt;} &lt;span style=&quot;color:#0033b3;&quot;&gt;finally &lt;/span&gt;{&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;exports&lt;/span&gt;.stopRecording();&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;exports = channel.startExportRecording();&lt;br&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;try &lt;/span&gt;{&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;request &lt;/span&gt;= serialize(callable,channel);&lt;br&gt;} &lt;span style=&quot;color:#0033b3;&quot;&gt;finally &lt;/span&gt;{&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;exports&lt;/span&gt;.stopRecording();&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="-850" y="5610" width="360" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-8" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Channel&lt;/pre&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-8" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;Channel&lt;/pre&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-460" y="5400" width="440" height="104" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-9" value="+&amp;nbsp;ExportTable &lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;exportedObjects &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ExportTable()&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9PFKNPjo5pRAxwCTYQ8B-8">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-9" value="+&amp;nbsp;ExportTable &lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;exportedObjects &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ExportTable()&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="9PFKNPjo5pRAxwCTYQ8B-8" vertex="1">
           <mxGeometry y="26" width="440" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-10" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9PFKNPjo5pRAxwCTYQ8B-8">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-10" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="9PFKNPjo5pRAxwCTYQ8B-8" vertex="1">
           <mxGeometry y="52" width="440" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-11" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9PFKNPjo5pRAxwCTYQ8B-8">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-11" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="9PFKNPjo5pRAxwCTYQ8B-8" vertex="1">
           <mxGeometry y="78" width="440" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-12" value="&lt;b&gt;一个channel拥有一个ExportTable对象&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-460" y="5350" width="210" height="30" as="geometry" />
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-12" value="&lt;b&gt;一个channel拥有一个ExportTable对象&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="5350" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-13" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-947" y="5680" as="sourcePoint" />
             <mxPoint x="-827" y="5680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-14" value="&lt;b&gt;序列化对象期间，可能会在对象writeObject里调用exportTable.export()函数，它会export到UserRequest对象的&lt;span style=&quot;background-color: initial;&quot;&gt;ExportList&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color); text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;exports属性里&lt;/span&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-14" value="&lt;b&gt;序列化对象期间，可能会在对象writeObject里调用exportTable.export()函数，它会export到UserRequest对象的&lt;span style=&quot;background-color: initial;&quot;&gt;ExportList&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color); text-align: left; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(135, 16, 148);&quot;&gt;exports属性里&lt;/span&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1060" y="5590" width="210" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-15" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-960" y="5480" as="sourcePoint" />
             <mxPoint x="-790" y="5480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;new UserRequest(c&lt;span style=&quot;color:#000000;&quot;&gt;hannel&lt;/span&gt;, c&lt;span style=&quot;color:#000000;&quot;&gt;allable&lt;/span&gt;)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;new UserRequest(c&lt;span style=&quot;color:#000000;&quot;&gt;hannel&lt;/span&gt;, c&lt;span style=&quot;color:#000000;&quot;&gt;allable&lt;/span&gt;)&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1280" y="5446" width="294" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-17" value="生成UserRequest对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-17" value="生成UserRequest对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-960" y="5420" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-18" value="生成时会序列化callable对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="9PFKNPjo5pRAxwCTYQ8B-18" value="生成时会序列化callable对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-700" y="5550" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-520" y="5650" as="sourcePoint" />
+            <mxPoint x="-390" y="5650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-2" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;public &lt;span style=&quot;color:#000000;&quot;&gt;ExportTable&lt;/span&gt;.&lt;span style=&quot;color:#000000;&quot;&gt;ExportList &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;startExportRecording&lt;/span&gt;() {&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;exportedObjects&lt;/span&gt;.startRecording();&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="5610" width="440" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-3" value="Channell类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="5570" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-4" value="&lt;pre style=&quot;border-color: var(--border-color); background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;UserRequest类&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-850" y="5570" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-30" y="5644.5" as="sourcePoint" />
+            <mxPoint x="90" y="5644.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-6" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;ExportList &lt;span style=&quot;color:#00627a;&quot;&gt;startRecording&lt;/span&gt;() {&lt;br&gt;    &lt;span style=&quot;color:#000000;&quot;&gt;ExportList el &lt;/span&gt;= &lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;ExportList();&lt;br&gt;    &lt;span style=&quot;color:#871094;&quot;&gt;lists&lt;/span&gt;.set(&lt;span style=&quot;color:#000000;&quot;&gt;el&lt;/span&gt;);&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;el&lt;/span&gt;;&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="5590" width="420" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-7" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;ExportTable类&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="124" y="5540" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-8" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;ExportTable&lt;/pre&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="5390" width="440" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-9" value="+&amp;nbsp;ThreadLocal&amp;lt;ExportList&amp;gt; lists" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7Z65fcuOvC9u-u0fuQtn-8">
+          <mxGeometry y="26" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-10" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7Z65fcuOvC9u-u0fuQtn-8">
+          <mxGeometry y="52" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-11" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7Z65fcuOvC9u-u0fuQtn-8">
+          <mxGeometry y="78" width="440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="5570" as="sourcePoint" />
+            <mxPoint x="500" y="5520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-13" value="lists是一个绑定线程的成员变量" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="5540" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-470" y="5660" as="sourcePoint" />
+            <mxPoint x="-170" y="5770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="5700" as="sourcePoint" />
+            <mxPoint x="-110" y="5770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Z65fcuOvC9u-u0fuQtn-16" value="说明一个UserRequest关联一个新的ExportList对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="5780" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
