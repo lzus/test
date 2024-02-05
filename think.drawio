@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-05T03:27:01.295Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="iGYTzhLx_dzMr6EMz73Z" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-05T03:35:35.787Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="XTLdCqwt0IaxlvCdrhhY" version="23.1.1" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4501" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1116,7 +1116,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3DbJFzkR7tOIAXbU7Q84-16" value="RemoteOutputStream被序列化后，发送到socket远端" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1060" y="6280" width="250" height="30" as="geometry" />
+          <mxGeometry x="-1070" y="6280" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3DbJFzkR7tOIAXbU7Q84-17" value="socket" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-688.64" y="6260" width="60" height="30" as="geometry" />
@@ -1142,8 +1142,11 @@
         <mxCell id="3DbJFzkR7tOIAXbU7Q84-26" value="&lt;pre style=&quot;border-color: var(--border-color); text-align: left; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ProxyOutputStream&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="372" y="6240" width="238" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3DbJFzkR7tOIAXbU7Q84-27" value="RemoteOutputStream类对象的反序列化后，它的core被改成了ProxyOutputStream对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-425" y="6414.5" width="510" height="30" as="geometry" />
+        <mxCell id="3DbJFzkR7tOIAXbU7Q84-27" value="RemoteOutputStream类对象反序列化后，它的core被改成了ProxyOutputStream对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-425" y="6415" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3DbJFzkR7tOIAXbU7Q84-28" value="此时，如果执行&lt;br&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;InputStream in = Files.&lt;span style=&quot;font-style:italic;&quot;&gt;newInputStream&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;Paths&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;get&lt;/span&gt;(&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;/a.txt&quot;&lt;/span&gt;))&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;org.apache.commons.io.IOUtils.&lt;span style=&quot;font-style:italic;&quot;&gt;copy&lt;/span&gt;(in, remoteOutputStream);&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="6490" width="510" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
