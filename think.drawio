@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-05T03:24:43.172Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="n_5CaGFD-CuDjVWZiAhY" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-05T03:27:01.295Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="iGYTzhLx_dzMr6EMz73Z" version="23.1.1" type="github">
   <diagram name="第 1 页" id="90UDRl886Aiy-A6zHKXE">
     <mxGraphModel dx="4501" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1131,7 +1131,7 @@
           <mxGeometry x="-413" y="6360" width="633" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3DbJFzkR7tOIAXbU7Q84-23" value="我们看一下ProxyOutputStream" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-470" y="6400" width="290" height="30" as="geometry" />
+          <mxGeometry x="366" y="6210" width="290" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3DbJFzkR7tOIAXbU7Q84-24" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;public final class &lt;span style=&quot;color:#000000;&quot;&gt;RemoteOutputStream &lt;/span&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;extends &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;OutputStream &lt;/span&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;implements &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;SerializableOnlyOverRemoting &lt;/span&gt;{&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;private transient &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;OutputStream &lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;core&lt;/span&gt;;&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;private static final long &lt;/span&gt;&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;serialVersionUID &lt;/span&gt;= &lt;span style=&quot;color:#1750eb;&quot;&gt;1L&lt;/span&gt;;&lt;br&gt;&lt;br&gt;    &lt;span style=&quot;color:#0033b3;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;RemoteOutputStream&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;OutputStream &lt;/span&gt;core) {&lt;br&gt;            &lt;span style=&quot;color:#0033b3;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#871094;&quot;&gt;core &lt;/span&gt;= core;&lt;br&gt;    }&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="-2000" y="6000" width="822.64" height="140" as="geometry" />
@@ -1140,7 +1140,10 @@
           <mxGeometry x="420" y="6270" width="810" height="240" as="geometry" />
         </mxCell>
         <mxCell id="3DbJFzkR7tOIAXbU7Q84-26" value="&lt;pre style=&quot;border-color: var(--border-color); text-align: left; background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ProxyOutputStream&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="432" y="6230" width="238" height="30" as="geometry" />
+          <mxGeometry x="372" y="6240" width="238" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3DbJFzkR7tOIAXbU7Q84-27" value="RemoteOutputStream类对象的反序列化后，它的core被改成了ProxyOutputStream对象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-425" y="6414.5" width="510" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
