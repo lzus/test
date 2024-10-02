@@ -1596,6 +1596,27 @@
             <mxPoint x="5470" y="1080" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-6" value="调用：&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;JnlpProtocol4Handler&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;.handle(。。。)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5390" y="1415" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-7" value="&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;JnlpProtocol4Handler&lt;/span&gt;是单例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="1415" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5430" y="1330" as="sourcePoint" />
+            <mxPoint x="5430" y="1380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5440" y="1465" as="sourcePoint" />
+            <mxPoint x="5440" y="1505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-10" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;public &lt;/span&gt;Future&amp;lt;Channel&amp;gt; handle(&lt;span style=&quot;color:#808000;&quot;&gt;@NonNull &lt;/span&gt;Socket socket, &lt;span style=&quot;color:#808000;&quot;&gt;@NonNull &lt;/span&gt;Map&amp;lt;String, String&amp;gt; headers,&lt;br&gt;                              &lt;span style=&quot;color:#808000;&quot;&gt;@NonNull &lt;/span&gt;List&amp;lt;? &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;extends &lt;/span&gt;JnlpConnectionStateListener&amp;gt; listeners)&lt;br&gt;        &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;throws &lt;/span&gt;IOException {&lt;br&gt;    NetworkLayer networkLayer = createNetworkLayer(socket);&lt;br&gt;    SSLEngine engine = createSSLEngine(socket);&lt;br&gt;    engine.setWantClientAuth(&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;true&lt;/span&gt;);&lt;br&gt;    engine.setNeedClientAuth(&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;needClientAuth&lt;/span&gt;);&lt;br&gt;    engine.setUseClientMode(&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;false&lt;/span&gt;);&lt;br&gt;    Handler handler = &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;new &lt;/span&gt;Handler(createConnectionState(socket, listeners), getClientDatabase());&lt;br&gt;    &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;return &lt;/span&gt;ProtocolStack.&lt;span style=&quot;font-style:italic;&quot;&gt;on&lt;/span&gt;(networkLayer)&lt;br&gt;            .filter(&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;new &lt;/span&gt;AckFilterLayer())&lt;br&gt;            .filter(&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;new &lt;/span&gt;SSLEngineFilterLayer(engine, handler))&lt;br&gt;            .filter(&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;new &lt;/span&gt;ConnectionHeadersFilterLayer(headers, handler))&lt;br&gt;            .named(String.&lt;span style=&quot;font-style:italic;&quot;&gt;format&lt;/span&gt;(&lt;span style=&quot;color:#008000;font-weight:bold;&quot;&gt;&quot;%s connection from %s&quot;&lt;/span&gt;, getName(), socket.getRemoteSocketAddress()))&lt;br&gt;            .listener(handler)&lt;br&gt;            .build(&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;new &lt;/span&gt;ChannelApplicationLayer(&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;threadPool&lt;/span&gt;, handler, headers.get(JnlpConnectionState.&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;COOKIE_KEY&lt;/span&gt;)))&lt;br&gt;            .get();&lt;br&gt;}&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5060" y="1530" width="920" height="285" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
