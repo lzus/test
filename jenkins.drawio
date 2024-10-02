@@ -1708,10 +1708,13 @@
           <mxGeometry x="5510" y="2123" width="240" height="62" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-37" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;while &lt;/span&gt;(getIoHub().isOpen() &amp;amp;&amp;amp; &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;out&lt;/span&gt;.isOpen() &amp;amp;&amp;amp; !done) {&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;    out&lt;/span&gt;.write(data)&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="5570" y="2280" width="470" height="90" as="geometry" />
+          <mxGeometry x="5530" y="2300" width="470" height="90" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-38" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;发送完数据就会跳出循环，不会一直占用线程&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="5510" y="2220" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-39" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;注意，block的socket是不能注册到selector的，所以bio模式下不能使用iohub中的selector&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5376" y="1865" width="414" height="85" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
