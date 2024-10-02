@@ -1631,8 +1631,8 @@
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="5760" y="1860" as="sourcePoint" />
-            <mxPoint x="5760" y="1930" as="targetPoint" />
+            <mxPoint x="6080" y="1850" as="sourcePoint" />
+            <mxPoint x="6080" y="1920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-18" value="&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px; background-color: rgb(255, 255, 255);&quot;&gt;JnlpProtocol4Handler&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -1663,10 +1663,10 @@
           <mxGeometry x="5196" y="1960" width="214" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-25" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;NIONetworkLayer&lt;/pre&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="1960" width="214" height="60" as="geometry" />
+          <mxGeometry x="6000" y="1950" width="214" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-26" value="假设是nio" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="5640" y="1880" width="100" height="30" as="geometry" />
+          <mxGeometry x="5960" y="1870" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-27" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -1676,6 +1676,42 @@
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-28" value="生成hub -- selector" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="6050" y="1235" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5290" y="2050" as="sourcePoint" />
+            <mxPoint x="5290" y="2110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-30" value="调用start()函数后，它会用线程池执行下列" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5160" y="2060" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-31" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;getIoHub().execute(&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;reader&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5160" y="2125" width="250" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5290" y="2200" as="sourcePoint" />
+            <mxPoint x="5290" y="2280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-33" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;单独一个线程循环读socket;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;这意味着一个socket一直占用连接一个线程&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5020" y="2230" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-34" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;while &lt;/span&gt;(getIoHub().isOpen() &amp;amp;&amp;amp; &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;in&lt;/span&gt;.isOpen() &amp;amp;&amp;amp; isRecvOpen()) {&lt;br&gt;    &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;try &lt;/span&gt;{&lt;br&gt;        &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;read = &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;in&lt;/span&gt;.read(buffer);&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;        ....&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;    } ...&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5010" y="2300" width="530" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-35" value="当有数据要发送时，调用wirte(bytebuffer)函数，它会用线程池执行" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5550" y="2060" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-36" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;getIoHub().execute(&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;writer&lt;/span&gt;);&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5510" y="2123" width="240" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-37" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;while &lt;/span&gt;(getIoHub().isOpen() &amp;amp;&amp;amp; &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;out&lt;/span&gt;.isOpen() &amp;amp;&amp;amp; !done) {&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;    out&lt;/span&gt;.write(data)&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;}&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5570" y="2280" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-38" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;发送完数据就会跳出循环，不会一直占用线程&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5510" y="2220" width="160" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
