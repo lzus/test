@@ -1172,8 +1172,8 @@
             <mxPoint x="5460" y="1160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-15" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sslContext = &lt;span style=&quot;color:#000000;&quot;&gt;SSLContext&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;getInstance&lt;/span&gt;(&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;TLS&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sslContext.init(&lt;span style=&quot;color:#000000;&quot;&gt;kmf&lt;/span&gt;.getKeyManagers(), &lt;span style=&quot;color:#000000;&quot;&gt;trustManagers&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;this.handler = &lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;new &lt;/span&gt;JnlpProtocol4Handler(&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;JnlpAgentReceiver&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;DATABASE&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;Computer&lt;/span&gt;.&lt;span style=&quot;color:#871094;font-style:italic;&quot;&gt;threadPoolForRemoting&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;hub&lt;/span&gt;.getHub(),&lt;br&gt;        &lt;span style=&quot;color:#000000;&quot;&gt;sslContext&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;false&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;true&lt;/span&gt;);&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="5281.5" y="1170" width="398.5" height="140" as="geometry" />
+        <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-15" value="&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;sslContext = &lt;span style=&quot;color:#000000;&quot;&gt;SSLContext&lt;/span&gt;.&lt;span style=&quot;font-style:italic;&quot;&gt;getInstance&lt;/span&gt;(&lt;span style=&quot;color:#067d17;&quot;&gt;&quot;TLS&quot;&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sslContext.init(&lt;span style=&quot;color:#000000;&quot;&gt;kmf&lt;/span&gt;.getKeyManagers(), &lt;span style=&quot;color:#000000;&quot;&gt;trustManagers&lt;/span&gt;, &lt;span style=&quot;color:#0033b3;&quot;&gt;null&lt;/span&gt;);&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;IOHubProvider hub = ExtensionList.&lt;span style=&quot;font-style:italic;&quot;&gt;lookupSingleton&lt;/span&gt;(IOHubProvider.&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;class&lt;/span&gt;);&lt;br&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;this.handler =  new &lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;JnlpProtocol4Handler(&lt;/span&gt;JnlpAgentReceiver&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(135, 16, 148); font-style: italic;&quot;&gt;DATABASE&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;Computer&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(135, 16, 148); font-style: italic;&quot;&gt;threadPoolForRemoting&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;hub&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;.getHub(),&lt;/span&gt;sslContext&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 51, 179);&quot;&gt;false&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 51, 179);&quot;&gt;true&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;);&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="5100" y="1170" width="780" height="140" as="geometry" />
         </mxCell>
         <mxCell id="SSMVNDvQ-9tZ9NZeTmvC-16" value="生成sslContext并初始化sslContext;&lt;br&gt;生成JnlpProtocol4Handler， 注意，下列代码只有来第一个连接时才执行一次，意味着JnlpProtocol4Handler也只有一例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5710" y="1160" width="400" height="30" as="geometry" />
@@ -1620,8 +1620,8 @@
         <mxCell id="xuHWqqeJXLuKqyazJKfs-11" value="此处还没加密" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="5750" y="960" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xuHWqqeJXLuKqyazJKfs-12" value="此处开始加密" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="5810" y="1120" width="90" height="30" as="geometry" />
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-12" value="此处处理加密设置" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5810" y="1120" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -1649,12 +1649,12 @@
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="5620" y="1310" as="sourcePoint" />
-            <mxPoint x="6000" y="1310" as="targetPoint" />
+            <mxPoint x="5630" y="1290" as="sourcePoint" />
+            <mxPoint x="6010" y="1290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-22" value="prever nio, 即socket读写采用nio模式" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="6020" y="1290" width="230" height="30" as="geometry" />
+          <mxGeometry x="6020" y="1280" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-23" value="假设是bio（jenkins默认是nio）" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="5160" y="1880" width="100" height="30" as="geometry" />
@@ -1667,6 +1667,15 @@
         </mxCell>
         <mxCell id="xuHWqqeJXLuKqyazJKfs-26" value="假设是nio" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="5640" y="1880" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-27" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5665" y="1249.29" as="sourcePoint" />
+            <mxPoint x="6045" y="1249.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuHWqqeJXLuKqyazJKfs-28" value="生成hub -- selector" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6050" y="1235" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
